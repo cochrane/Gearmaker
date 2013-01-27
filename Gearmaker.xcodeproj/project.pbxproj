@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5252F9CB16B5B4F0005AFA8C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5252F9CA16B5B4F0005AFA8C /* Cocoa.framework */; };
+		5252F9D516B5B4F0005AFA8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5252F9D316B5B4F0005AFA8C /* InfoPlist.strings */; };
+		5252F9D716B5B4F0005AFA8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252F9D616B5B4F0005AFA8C /* main.m */; };
+		5252F9DB16B5B4F0005AFA8C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5252F9D916B5B4F0005AFA8C /* Credits.rtf */; };
+		5252F9DE16B5B4F0005AFA8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252F9DD16B5B4F0005AFA8C /* AppDelegate.m */; };
+		5252F9E116B5B4F0005AFA8C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5252F9DF16B5B4F0005AFA8C /* MainMenu.xib */; };
+		5252F9E916B5B4F0005AFA8C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5252F9E816B5B4F0005AFA8C /* SenTestingKit.framework */; };
+		5252F9EA16B5B4F0005AFA8C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5252F9CA16B5B4F0005AFA8C /* Cocoa.framework */; };
+		5252F9F216B5B4F0005AFA8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5252F9F016B5B4F0005AFA8C /* InfoPlist.strings */; };
+		5252F9F516B5B4F0005AFA8C /* GearmakerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252F9F416B5B4F0005AFA8C /* GearmakerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5252F9EB16B5B4F0005AFA8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5252F9BD16B5B4F0005AFA8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5252F9C516B5B4F0005AFA8C;
+			remoteInfo = Gearmaker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5252F9C616B5B4F0005AFA8C /* Gearmaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gearmaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5252F9CA16B5B4F0005AFA8C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		5252F9CD16B5B4F0005AFA8C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		5252F9CE16B5B4F0005AFA8C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5252F9CF16B5B4F0005AFA8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5252F9D216B5B4F0005AFA8C /* Gearmaker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Gearmaker-Info.plist"; sourceTree = "<group>"; };
+		5252F9D416B5B4F0005AFA8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5252F9D616B5B4F0005AFA8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5252F9D816B5B4F0005AFA8C /* Gearmaker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gearmaker-Prefix.pch"; sourceTree = "<group>"; };
+		5252F9DA16B5B4F0005AFA8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		5252F9DC16B5B4F0005AFA8C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5252F9DD16B5B4F0005AFA8C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5252F9E016B5B4F0005AFA8C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		5252F9E716B5B4F0005AFA8C /* GearmakerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GearmakerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5252F9E816B5B4F0005AFA8C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		5252F9EF16B5B4F0005AFA8C /* GearmakerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GearmakerTests-Info.plist"; sourceTree = "<group>"; };
+		5252F9F116B5B4F0005AFA8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5252F9F316B5B4F0005AFA8C /* GearmakerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GearmakerTests.h; sourceTree = "<group>"; };
+		5252F9F416B5B4F0005AFA8C /* GearmakerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GearmakerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5252F9C316B5B4F0005AFA8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5252F9CB16B5B4F0005AFA8C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5252F9E316B5B4F0005AFA8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5252F9E916B5B4F0005AFA8C /* SenTestingKit.framework in Frameworks */,
+				5252F9EA16B5B4F0005AFA8C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5252F9BB16B5B4F0005AFA8C = {
+			isa = PBXGroup;
+			children = (
+				5252F9D016B5B4F0005AFA8C /* Gearmaker */,
+				5252F9ED16B5B4F0005AFA8C /* GearmakerTests */,
+				5252F9C916B5B4F0005AFA8C /* Frameworks */,
+				5252F9C716B5B4F0005AFA8C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5252F9C716B5B4F0005AFA8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5252F9C616B5B4F0005AFA8C /* Gearmaker.app */,
+				5252F9E716B5B4F0005AFA8C /* GearmakerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5252F9C916B5B4F0005AFA8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5252F9CA16B5B4F0005AFA8C /* Cocoa.framework */,
+				5252F9E816B5B4F0005AFA8C /* SenTestingKit.framework */,
+				5252F9CC16B5B4F0005AFA8C /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5252F9CC16B5B4F0005AFA8C /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5252F9CD16B5B4F0005AFA8C /* AppKit.framework */,
+				5252F9CE16B5B4F0005AFA8C /* CoreData.framework */,
+				5252F9CF16B5B4F0005AFA8C /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		5252F9D016B5B4F0005AFA8C /* Gearmaker */ = {
+			isa = PBXGroup;
+			children = (
+				5252F9DC16B5B4F0005AFA8C /* AppDelegate.h */,
+				5252F9DD16B5B4F0005AFA8C /* AppDelegate.m */,
+				5252F9DF16B5B4F0005AFA8C /* MainMenu.xib */,
+				5252F9D116B5B4F0005AFA8C /* Supporting Files */,
+			);
+			path = Gearmaker;
+			sourceTree = "<group>";
+		};
+		5252F9D116B5B4F0005AFA8C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5252F9D216B5B4F0005AFA8C /* Gearmaker-Info.plist */,
+				5252F9D316B5B4F0005AFA8C /* InfoPlist.strings */,
+				5252F9D616B5B4F0005AFA8C /* main.m */,
+				5252F9D816B5B4F0005AFA8C /* Gearmaker-Prefix.pch */,
+				5252F9D916B5B4F0005AFA8C /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5252F9ED16B5B4F0005AFA8C /* GearmakerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5252F9F316B5B4F0005AFA8C /* GearmakerTests.h */,
+				5252F9F416B5B4F0005AFA8C /* GearmakerTests.m */,
+				5252F9EE16B5B4F0005AFA8C /* Supporting Files */,
+			);
+			path = GearmakerTests;
+			sourceTree = "<group>";
+		};
+		5252F9EE16B5B4F0005AFA8C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5252F9EF16B5B4F0005AFA8C /* GearmakerTests-Info.plist */,
+				5252F9F016B5B4F0005AFA8C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5252F9C516B5B4F0005AFA8C /* Gearmaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5252F9F816B5B4F0005AFA8C /* Build configuration list for PBXNativeTarget "Gearmaker" */;
+			buildPhases = (
+				5252F9C216B5B4F0005AFA8C /* Sources */,
+				5252F9C316B5B4F0005AFA8C /* Frameworks */,
+				5252F9C416B5B4F0005AFA8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gearmaker;
+			productName = Gearmaker;
+			productReference = 5252F9C616B5B4F0005AFA8C /* Gearmaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5252F9E616B5B4F0005AFA8C /* GearmakerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5252F9FB16B5B4F0005AFA8C /* Build configuration list for PBXNativeTarget "GearmakerTests" */;
+			buildPhases = (
+				5252F9E216B5B4F0005AFA8C /* Sources */,
+				5252F9E316B5B4F0005AFA8C /* Frameworks */,
+				5252F9E416B5B4F0005AFA8C /* Resources */,
+				5252F9E516B5B4F0005AFA8C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5252F9EC16B5B4F0005AFA8C /* PBXTargetDependency */,
+			);
+			name = GearmakerTests;
+			productName = GearmakerTests;
+			productReference = 5252F9E716B5B4F0005AFA8C /* GearmakerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5252F9BD16B5B4F0005AFA8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Torsten Kammer";
+			};
+			buildConfigurationList = 5252F9C016B5B4F0005AFA8C /* Build configuration list for PBXProject "Gearmaker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5252F9BB16B5B4F0005AFA8C;
+			productRefGroup = 5252F9C716B5B4F0005AFA8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5252F9C516B5B4F0005AFA8C /* Gearmaker */,
+				5252F9E616B5B4F0005AFA8C /* GearmakerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5252F9C416B5B4F0005AFA8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5252F9D516B5B4F0005AFA8C /* InfoPlist.strings in Resources */,
+				5252F9DB16B5B4F0005AFA8C /* Credits.rtf in Resources */,
+				5252F9E116B5B4F0005AFA8C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5252F9E416B5B4F0005AFA8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5252F9F216B5B4F0005AFA8C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5252F9E516B5B4F0005AFA8C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5252F9C216B5B4F0005AFA8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5252F9D716B5B4F0005AFA8C /* main.m in Sources */,
+				5252F9DE16B5B4F0005AFA8C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5252F9E216B5B4F0005AFA8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5252F9F516B5B4F0005AFA8C /* GearmakerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5252F9EC16B5B4F0005AFA8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5252F9C516B5B4F0005AFA8C /* Gearmaker */;
+			targetProxy = 5252F9EB16B5B4F0005AFA8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5252F9D316B5B4F0005AFA8C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5252F9D416B5B4F0005AFA8C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5252F9D916B5B4F0005AFA8C /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5252F9DA16B5B4F0005AFA8C /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		5252F9DF16B5B4F0005AFA8C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5252F9E016B5B4F0005AFA8C /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		5252F9F016B5B4F0005AFA8C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5252F9F116B5B4F0005AFA8C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5252F9F616B5B4F0005AFA8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5252F9F716B5B4F0005AFA8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5252F9F916B5B4F0005AFA8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Gearmaker/Gearmaker-Prefix.pch";
+				INFOPLIST_FILE = "Gearmaker/Gearmaker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5252F9FA16B5B4F0005AFA8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Gearmaker/Gearmaker-Prefix.pch";
+				INFOPLIST_FILE = "Gearmaker/Gearmaker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5252F9FC16B5B4F0005AFA8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Gearmaker.app/Contents/MacOS/Gearmaker";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Gearmaker/Gearmaker-Prefix.pch";
+				INFOPLIST_FILE = "GearmakerTests/GearmakerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		5252F9FD16B5B4F0005AFA8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Gearmaker.app/Contents/MacOS/Gearmaker";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Gearmaker/Gearmaker-Prefix.pch";
+				INFOPLIST_FILE = "GearmakerTests/GearmakerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5252F9C016B5B4F0005AFA8C /* Build configuration list for PBXProject "Gearmaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5252F9F616B5B4F0005AFA8C /* Debug */,
+				5252F9F716B5B4F0005AFA8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5252F9F816B5B4F0005AFA8C /* Build configuration list for PBXNativeTarget "Gearmaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5252F9F916B5B4F0005AFA8C /* Debug */,
+				5252F9FA16B5B4F0005AFA8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5252F9FB16B5B4F0005AFA8C /* Build configuration list for PBXNativeTarget "GearmakerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5252F9FC16B5B4F0005AFA8C /* Debug */,
+				5252F9FD16B5B4F0005AFA8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5252F9BD16B5B4F0005AFA8C /* Project object */;
+}
