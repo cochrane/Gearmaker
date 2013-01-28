@@ -8,8 +8,17 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class Gear;
+@class Gear3D;
+@class GearView;
+
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet GearView *gearView;
+@property (nonatomic) Gear *gear;
+@property (nonatomic) Gear3D *gear3D;
+
+- (IBAction)export:(id)sender;
 
 @end
