@@ -78,13 +78,20 @@
 		NSValue *value = [NSValue valueWithPoint:NSMakePoint(point.pointValue.x, -point.pointValue.y)];
 		[reverseToothFlank addObject:value];
 	}
+
+	// Find out how much angle has to be added to the reverse side
+	Involute *curve = [[Involute alloc] init];
+	curve.baseCircleRadius = self.grundkreisdurchmesser * 0.5;
+	CGFloat angleToTeilkreis = [curve angleForIntersectionWithCircleRadius:self.teilkreisdurchmesser * 0.5];
+	CGPoint intersectionPoint = [curve pointAt:angleToTeilkreis];
+	CGFloat additionalAngle = atan2(intersectionPoint.y, intersectionPoint.x);
 	
 	NSMutableArray *points = [[NSMutableArray alloc] initWithCapacity:toothFlank.count * 2 * self.teeth];
 	
 	for (NSUInteger i = 0; i < self.teeth; i++)
 	{
 		NSAffineTransform *rotate = [NSAffineTransform transform];
-		[rotate rotateByRadians:M_PI * 2 * (CGFloat) i / (CGFloat) self.teeth];
+		[rotate rotateByRadians:M_PI * 2.0 * (CGFloat) i / (CGFloat) self.teeth];
 		
 		NSArray *rotatedToothFlank = [toothFlank map:^(NSValue *point){
 			return [NSValue valueWithPoint:[rotate transformPoint:point.pointValue]];
@@ -93,7 +100,7 @@
 		[points addObjectsFromArray:rotatedToothFlank];
 		
 		NSAffineTransform *reverseFlankRotate = [NSAffineTransform transform];
-		[reverseFlankRotate rotateByRadians:M_PI * 2 * (0.5 + (CGFloat) i) / (CGFloat) self.teeth];
+		[reverseFlankRotate rotateByRadians:2.0 * additionalAngle + M_PI * 2.0 * (0.5 + (CGFloat) i) / (CGFloat) self.teeth];
 		
 		NSArray *rotatedReverseToothFlank = [reverseToothFlank map:^(NSValue *point){
 			return [NSValue valueWithPoint:[reverseFlankRotate transformPoint:point.pointValue]];
