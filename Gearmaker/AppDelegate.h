@@ -16,6 +16,8 @@
 
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet GearView *gearView;
+@property (assign) IBOutlet NSObjectController *gearController;
+@property (assign) IBOutlet NSObjectController *gear3DController;
 @property (nonatomic) Gear *gear;
 @property (nonatomic) Gear3D *gear3D;
 

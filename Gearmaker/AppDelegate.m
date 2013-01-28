@@ -32,6 +32,9 @@
 
 - (IBAction)export:(id)sender;
 {
+	[self.gearController commitEditing];
+	[self.gear3DController commitEditing];
+	
 	NSSavePanel *savePanel = [NSSavePanel savePanel];
 	savePanel.canCreateDirectories = YES;
 	savePanel.canSelectHiddenExtension = YES;
