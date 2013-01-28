@@ -53,6 +53,16 @@
 	
 	if (self.outlinePoints.count == 0) return;
 	
+	// Prepare translation
+	NSAffineTransform *transform = [NSAffineTransform transform];
+	[transform translateXBy:NSMidX(self.bounds) yBy:NSMidY(self.bounds)];
+	
+	// Draw teilkreis
+	[[NSColor redColor] set];
+	CGFloat teilkreisRadius = self.gear.teilkreisdurchmesser * 0.5;
+	NSBezierPath *teilkreisPath = [NSBezierPath bezierPathWithOvalInRect:NSMakeRect(-teilkreisRadius, -teilkreisRadius, teilkreisRadius*2., teilkreisRadius*2.)];
+	[[transform transformBezierPath:teilkreisPath] stroke];
+	
 	// Draw gear
 	[[NSColor blackColor] set];
 	NSBezierPath *gearPath = [NSBezierPath bezierPath];
@@ -60,14 +70,7 @@
 	for (NSValue *point in self.outlinePoints)
 		[gearPath lineToPoint:point.pointValue];
 	[gearPath closePath];
-
-	// Translate to center
-	NSAffineTransform *transform = [NSAffineTransform transform];
-	[transform translateXBy:NSMidX(self.bounds) yBy:NSMidY(self.bounds)];
-	NSBezierPath *translatedPath = [transform transformBezierPath:gearPath];
-	
-	// Draw
-	[translatedPath stroke];
+	[[transform transformBezierPath:gearPath] stroke];
 }
 
 @end
