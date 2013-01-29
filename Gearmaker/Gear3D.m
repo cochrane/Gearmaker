@@ -46,13 +46,13 @@
 	{
 		// Above
 		[output appendFormat:@"\nf "];
-		for (NSUInteger j = 0; j < pointsPerTeeth; j++)
-			[output appendFormat:@"%lu ", j + i*pointsPerTeeth + 1];
+		for (NSUInteger j = 1; j <= pointsPerTeeth; j++)
+			[output appendFormat:@"%lu ", j + i*pointsPerTeeth];
 		
-		// Below
+		// Below - reverse for correct face winding
 		[output appendFormat:@"\nf "];
-		for (NSUInteger j = 0; j < pointsPerTeeth; j++)
-			[output appendFormat:@"%lu ", j + i*pointsPerTeeth + 1 + outline.count];
+		for (NSUInteger j = pointsPerTeeth; j > 0; j--)
+			[output appendFormat:@"%lu ", j + i*pointsPerTeeth + outline.count];
 	}
 	
 	// Add central face - top
