@@ -38,7 +38,7 @@
 	
 	// Add wall faces
 	for (NSUInteger i = 0; i < outline.count; i++)
-		[output appendFormat:@"f %lu %lu %lu %lu\n", i+1, i+1+outline.count, i+2+outline.count, i+2];
+		[output appendFormat:@"f %lu %lu %lu %lu\n", (i%outline.count)+1, ((i)%outline.count)+outline.count+1, ((i+1)%outline.count)+outline.count+1, ((i+1)%outline.count)+1];
 	
 	// Add tooth faces
 	NSUInteger pointsPerTeeth = outline.count / self.gear.teeth;
