@@ -64,9 +64,11 @@
 	
 	// Central face - bottom
 	[output appendFormat:@"\n\nf "];
-	for (NSUInteger i = 0; i < self.gear.teeth; i++)
+	for (NSUInteger i = self.gear.teeth; i > 0; i--)
 	{
-		[output appendFormat:@"%lu %lu ", i*pointsPerTeeth+1 + outline.count, (i+1)*pointsPerTeeth + outline.count];
+		[output appendFormat:@"%lu %lu ",
+		 i*pointsPerTeeth + outline.count,
+		 (i-1)*pointsPerTeeth+1 + outline.count];
 	}
 	
 	return [output copy];
