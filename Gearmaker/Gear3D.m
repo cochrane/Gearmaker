@@ -21,7 +21,7 @@
 	CGFloat halfWidth = self.thickness * 0.5;
 	
 	// Print vertices on top
-	for (NSValue *value in outline)
+	for (NSValue *value in outline.reverseObjectEnumerator)
 	{
 		NSPoint point = value.pointValue;
 		[output appendFormat:@"v %.6f %.6f %.6f\n", point.x, halfWidth, point.y];
@@ -29,7 +29,7 @@
 	[output appendString:@"\n"];
 	
 	// Print vertices below
-	for (NSValue *value in outline)
+	for (NSValue *value in outline.reverseObjectEnumerator)
 	{
 		NSPoint point = value.pointValue;
 		[output appendFormat:@"v %.6f %.6f %.6f\n", point.x, -halfWidth, point.y];
