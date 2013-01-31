@@ -1,6 +1,8 @@
 Gearmaker
 =========
 
-A quick-and-dirty tool to create 3D files of involute gears.
+Ein kleines, einfaches Tool um Zahnräder mit Evolventenverzahnung nach DIN zu erstellen, z.B. für 3D-Druck.
 
-Currently, the language is a weird mixture of english and german. That should probably be changed. Files are output in OBJ. The faces have varying (and possibly enormous) amounts of vertices, but they're all convex. Have fun!
+Download: <http://ferroequinologist.de/software/gearmaker/Gearmaker-1.0.zip>
+
+Das Programm exportiert die Zahnräder im OBJ-Format. Je nach weiterer Verwendung kann es nötig sein, die Dateien noch mal zu triangulieren.
