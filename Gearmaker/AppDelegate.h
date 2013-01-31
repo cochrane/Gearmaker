@@ -18,6 +18,7 @@
 @property (assign) IBOutlet GearView *gearView;
 @property (assign) IBOutlet NSObjectController *gearController;
 @property (assign) IBOutlet NSObjectController *gear3DController;
+@property (assign) IBOutlet NSNumberFormatter *angleNumberFormatter;
 @property (nonatomic) Gear *gear;
 @property (nonatomic) Gear3D *gear3D;
 

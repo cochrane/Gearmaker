@@ -376,6 +376,7 @@
 									<dictionary class="NSMutableDictionary" key="NS.attributes">
 										<boolean value="YES" key="allowsFloats"/>
 										<integer value="1040" key="formatterBehavior"/>
+										<boolean value="YES" key="lenient"/>
 										<object class="NSLocale" key="locale" id="242638712">
 											<string key="NS.identifier"/>
 										</object>
@@ -493,14 +494,17 @@
 									<dictionary class="NSMutableDictionary" key="NS.attributes">
 										<boolean value="YES" key="allowsFloats"/>
 										<integer value="1040" key="formatterBehavior"/>
+										<boolean value="YES" key="lenient"/>
 										<reference key="locale" ref="242638712"/>
+										<integer value="0" key="maximumFractionDigits"/>
+										<integer value="0" key="minimum"/>
 										<string key="negativeInfinitySymbol">-∞</string>
 										<string key="nilSymbol"/>
 										<integer value="1" key="numberStyle"/>
 										<string key="positiveInfinitySymbol">+∞</string>
 									</dictionary>
-									<string key="NS.positiveformat">#,##0.###</string>
-									<string key="NS.negativeformat">#,##0.###</string>
+									<string key="NS.positiveformat">#,##0</string>
+									<string key="NS.negativeformat">#,##0</string>
 									<nil key="NS.positiveattrs"/>
 									<nil key="NS.negativeattrs"/>
 									<nil key="NS.zero"/>
@@ -511,7 +515,7 @@
 										<string key="NSString">NaN</string>
 										<reference key="NSAttributes" ref="1067662160"/>
 									</object>
-									<reference key="NS.min" ref="241313452"/>
+									<integer value="0" key="NS.min"/>
 									<reference key="NS.max" ref="241313452"/>
 									<object class="NSDecimalNumberHandler" key="NS.rounding">
 										<int key="NS.roundingmode">3</int>
@@ -572,15 +576,18 @@
 									<dictionary class="NSMutableDictionary" key="NS.attributes">
 										<boolean value="YES" key="allowsFloats"/>
 										<integer value="1040" key="formatterBehavior"/>
+										<boolean value="YES" key="lenient"/>
 										<reference key="locale" ref="242638712"/>
 										<integer value="42" key="maximumFractionDigits"/>
 										<integer value="57" key="multiplier"/>
 										<string key="negativeInfinitySymbol">-∞</string>
+										<string key="negativeSuffix"> °</string>
 										<string key="nilSymbol"/>
 										<string key="positiveInfinitySymbol">+∞</string>
+										<string key="positiveSuffix"> °</string>
 									</dictionary>
-									<string key="NS.positiveformat">#.##########################################</string>
-									<string key="NS.negativeformat">#.##########################################</string>
+									<string key="NS.positiveformat">#.########################################## °</string>
+									<string key="NS.negativeformat">#.########################################## °</string>
 									<nil key="NS.positiveattrs"/>
 									<nil key="NS.negativeattrs"/>
 									<nil key="NS.zero"/>
@@ -652,6 +659,7 @@
 									<dictionary class="NSMutableDictionary" key="NS.attributes">
 										<boolean value="YES" key="allowsFloats"/>
 										<integer value="1040" key="formatterBehavior"/>
+										<boolean value="YES" key="lenient"/>
 										<reference key="locale" ref="242638712"/>
 										<string key="negativeInfinitySymbol">-∞</string>
 										<string key="nilSymbol"/>
@@ -1198,6 +1206,14 @@
 						<reference key="destination" ref="429870507"/>
 					</object>
 					<int key="connectionID">744</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">angleNumberFormatter</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="616850330"/>
+					</object>
+					<int key="connectionID">745</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
@@ -3099,7 +3115,7 @@
 				<integer value="1041" key="623.IBNumberFormatterBehaviorMetadataKey"/>
 				<boolean value="YES" key="623.IBNumberFormatterLocalizesFormatMetadataKey"/>
 				<string key="623.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<integer value="1041" key="624.IBNumberFormatterBehaviorMetadataKey"/>
+				<integer value="1040" key="624.IBNumberFormatterBehaviorMetadataKey"/>
 				<boolean value="YES" key="624.IBNumberFormatterLocalizesFormatMetadataKey"/>
 				<string key="624.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<integer value="1040" key="625.IBNumberFormatterBehaviorMetadataKey"/>
@@ -3182,7 +3198,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">744</int>
+			<int key="maxID">745</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -3201,12 +3217,17 @@
 						</object>
 					</object>
 					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="angleNumberFormatter">NSNumberFormatter</string>
 						<string key="gear3DController">NSObjectController</string>
 						<string key="gearController">NSObjectController</string>
 						<string key="gearView">GearView</string>
 						<string key="window">NSWindow</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="angleNumberFormatter">
+							<string key="name">angleNumberFormatter</string>
+							<string key="candidateClassName">NSNumberFormatter</string>
+						</object>
 						<object class="IBToOneOutletInfo" key="gear3DController">
 							<string key="name">gear3DController</string>
 							<string key="candidateClassName">NSObjectController</string>

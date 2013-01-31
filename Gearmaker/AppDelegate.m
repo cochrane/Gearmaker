@@ -16,6 +16,8 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+	self.angleNumberFormatter.multiplier = @(180.0 / M_PI);
+	
 	self.gear = [[Gear alloc] init];
 	self.gear.module = 10;
 	self.gear.teeth = 30;
