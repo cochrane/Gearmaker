@@ -12,7 +12,6 @@
 		5252F9DE16B5B4F0005AFA8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252F9DD16B5B4F0005AFA8C /* AppDelegate.m */; };
 		5252F9E916B5B4F0005AFA8C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5252F9E816B5B4F0005AFA8C /* SenTestingKit.framework */; };
 		5252F9EA16B5B4F0005AFA8C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5252F9CA16B5B4F0005AFA8C /* Cocoa.framework */; };
-		5252F9F216B5B4F0005AFA8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5252F9F016B5B4F0005AFA8C /* InfoPlist.strings */; };
 		5252F9F516B5B4F0005AFA8C /* GearmakerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252F9F416B5B4F0005AFA8C /* GearmakerTests.m */; };
 		5252FA0016B5B500005AFA8C /* Involute.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252F9FF16B5B500005AFA8C /* Involute.m */; };
 		5252FA0316B5B539005AFA8C /* TestInvolute.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252FA0216B5B539005AFA8C /* TestInvolute.m */; };
@@ -50,13 +49,13 @@
 		5252F9E716B5B4F0005AFA8C /* GearmakerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GearmakerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5252F9E816B5B4F0005AFA8C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		5252F9EF16B5B4F0005AFA8C /* GearmakerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GearmakerTests-Info.plist"; sourceTree = "<group>"; };
-		5252F9F116B5B4F0005AFA8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5252F9F316B5B4F0005AFA8C /* GearmakerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GearmakerTests.h; sourceTree = "<group>"; };
 		5252F9F416B5B4F0005AFA8C /* GearmakerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GearmakerTests.m; sourceTree = "<group>"; };
 		5252F9FE16B5B500005AFA8C /* Involute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Involute.h; sourceTree = "<group>"; };
 		5252F9FF16B5B500005AFA8C /* Involute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Involute.m; sourceTree = "<group>"; };
 		5252FA0116B5B539005AFA8C /* TestInvolute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestInvolute.h; sourceTree = "<group>"; };
 		5252FA0216B5B539005AFA8C /* TestInvolute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestInvolute.m; sourceTree = "<group>"; };
+		52653D7816BAAE53001D802F /* Gearmaker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Gearmaker.entitlements; sourceTree = "<group>"; };
 		52AD557F16B9C677007F0F0D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = de; path = Gearmaker/de.lproj/Credits.rtf; sourceTree = "<group>"; };
 		52AD558116B9C677007F0F0D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = Gearmaker/de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		52AD558516B9C681007F0F0D /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -135,6 +134,7 @@
 		5252F9D016B5B4F0005AFA8C /* Gearmaker */ = {
 			isa = PBXGroup;
 			children = (
+				52653D7816BAAE53001D802F /* Gearmaker.entitlements */,
 				52C86CFB16B70B7800693748 /* NSArray+Map.h */,
 				52C86CFC16B70B7800693748 /* NSArray+Map.m */,
 				5252F9DC16B5B4F0005AFA8C /* AppDelegate.h */,
@@ -183,7 +183,6 @@
 			isa = PBXGroup;
 			children = (
 				5252F9EF16B5B4F0005AFA8C /* GearmakerTests-Info.plist */,
-				5252F9F016B5B4F0005AFA8C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -270,7 +269,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5252F9F216B5B4F0005AFA8C /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,14 +326,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5252F9F016B5B4F0005AFA8C /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5252F9F116B5B4F0005AFA8C /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		52AD557E16B9C677007F0F0D /* Credits.rtf */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -375,6 +365,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application: Torsten Kammer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -393,6 +384,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
 				WARNING_CFLAGS = "-Wall";
 			};
@@ -408,6 +400,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application: Torsten Kammer";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -419,6 +412,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
 				WARNING_CFLAGS = "-Wall";
 			};
@@ -427,6 +421,7 @@
 		5252F9F916B5B4F0005AFA8C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Gearmaker/Gearmaker.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gearmaker/Gearmaker-Prefix.pch";
@@ -439,6 +434,7 @@
 		5252F9FA16B5B4F0005AFA8C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Gearmaker/Gearmaker.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gearmaker/Gearmaker-Prefix.pch";
