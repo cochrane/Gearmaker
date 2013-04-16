@@ -8,8 +8,10 @@
 
 #import "AppDelegate.h"
 
+#import "ExportViewController.h"
 #import "Gear.h"
 #import "Gear3D.h"
+#import "Gear3D+ColladaExport.h"
 #import "GearView.h"
 
 @implementation AppDelegate
@@ -40,16 +42,32 @@
 	NSSavePanel *savePanel = [NSSavePanel savePanel];
 	savePanel.canCreateDirectories = YES;
 	savePanel.canSelectHiddenExtension = YES;
-	savePanel.allowedFileTypes = @[ @"obj" ];
+	ExportViewController *controller = [[ExportViewController alloc] init];
+	savePanel.accessoryView = controller.view;
+	controller.panel = savePanel;
 	
 	[savePanel beginSheetModalForWindow:self.window completionHandler:^(NSInteger result){
 		if (result != NSOKButton) return;
 		
-		NSString *text = self.gear3D.objString;
-		NSError *error = nil;
-		BOOL success = [text writeToURL:savePanel.URL atomically:YES encoding:NSUTF8StringEncoding error:&error];
-		if (!success)
-			[self.window presentError:error];
+		if ([controller.exportType isEqual:@"org.khronos.collada.digital-asset-exchange"])
+		{
+			NSXMLDocument *doc = [self.gear3D colladaDocumentUsingTriangulation:controller.useTriangulation];
+			NSData *data = doc.XMLData;
+			
+			NSError *error;
+			BOOL success = [data writeToURL:savePanel.URL options:NSDataWritingAtomic error:&error];
+			if (!success)
+				[self.window presentError:error];
+		}
+		else if ([controller.exportType isEqual:@"com.autodesk.obj"])
+		{
+			NSString *string = controller.useTriangulation ? [self.gear3D triangulatedObjString] : [self.gear3D objString];
+			
+			NSError *error;
+			BOOL success = [string writeToURL:savePanel.URL atomically:YES encoding:NSASCIIStringEncoding error:&error];
+			if (!success)
+				[self.window presentError:error];
+		}
 	}];
 }
 

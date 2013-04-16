@@ -1,0 +1,117 @@
+
+/* Class = "NSMenuItem"; title = "Alle nach vorne bringen"; ObjectID = "5"; */
+"5.title" = "Alle nach vorne bringen";
+
+/* Class = "NSMenuItem"; title = "Fenster"; ObjectID = "19"; */
+"19.title" = "Fenster";
+
+/* Class = "NSMenuItem"; title = "Im Dock ablegen"; ObjectID = "23"; */
+"23.title" = "Im Dock ablegen";
+
+/* Class = "NSMenu"; title = "Fenster"; ObjectID = "24"; */
+"24.title" = "Fenster";
+
+/* Class = "NSMenu"; title = "AMainMenu"; ObjectID = "29"; */
+"29.title" = "AMainMenu";
+
+/* Class = "NSMenuItem"; title = "Gearmaker"; ObjectID = "56"; */
+"56.title" = "Gearmaker";
+
+/* Class = "NSMenu"; title = "Gearmaker"; ObjectID = "57"; */
+"57.title" = "Gearmaker";
+
+/* Class = "NSMenuItem"; title = "Über Gearmaker"; ObjectID = "58"; */
+"58.title" = "Über Gearmaker";
+
+/* Class = "NSMenuItem"; title = "Einstellungen…"; ObjectID = "129"; */
+"129.title" = "Einstellungen…";
+
+/* Class = "NSMenu"; title = "Dienste"; ObjectID = "130"; */
+"130.title" = "Dienste";
+
+/* Class = "NSMenuItem"; title = "Dienste"; ObjectID = "131"; */
+"131.title" = "Dienste";
+
+/* Class = "NSMenuItem"; title = "Gearmaker ausblenden"; ObjectID = "134"; */
+"134.title" = "Gearmaker ausblenden";
+
+/* Class = "NSMenuItem"; title = "Gearmaker beenden"; ObjectID = "136"; */
+"136.title" = "Gearmaker beenden";
+
+/* Class = "NSMenuItem"; title = "Andere ausblenden"; ObjectID = "145"; */
+"145.title" = "Andere ausblenden";
+
+/* Class = "NSMenuItem"; title = "Alle einblenden"; ObjectID = "150"; */
+"150.title" = "Alle einblenden";
+
+/* Class = "NSMenuItem"; title = "Kopieren"; ObjectID = "197"; */
+"197.title" = "Kopieren";
+
+/* Class = "NSMenuItem"; title = "Alles auswählen"; ObjectID = "198"; */
+"198.title" = "Alles auswählen";
+
+/* Class = "NSMenuItem"; title = "Ausschneiden"; ObjectID = "199"; */
+"199.title" = "Ausschneiden";
+
+/* Class = "NSMenuItem"; title = "Einfügen"; ObjectID = "203"; */
+"203.title" = "Einfügen";
+
+/* Class = "NSMenu"; title = "Bearbeiten"; ObjectID = "205"; */
+"205.title" = "Bearbeiten";
+
+/* Class = "NSMenuItem"; title = "Widerrufen"; ObjectID = "207"; */
+"207.title" = "Widerrufen";
+
+/* Class = "NSMenuItem"; title = "Wiederholen"; ObjectID = "215"; */
+"215.title" = "Wiederholen";
+
+/* Class = "NSMenuItem"; title = "Bearbeiten"; ObjectID = "217"; */
+"217.title" = "Bearbeiten";
+
+/* Class = "NSMenuItem"; title = "Zoomen"; ObjectID = "239"; */
+"239.title" = "Zoomen";
+
+/* Class = "NSWindow"; title = "Gearmaker"; ObjectID = "371"; */
+"371.title" = "Gearmaker";
+
+/* Class = "NSMenuItem"; title = "Hilfe"; ObjectID = "490"; */
+"490.title" = "Hilfe";
+
+/* Class = "NSMenu"; title = "Hilfe"; ObjectID = "491"; */
+"491.title" = "Hilfe";
+
+/* Class = "NSMenuItem"; title = "Gearmaker Hilfe"; ObjectID = "492"; */
+"492.title" = "Gearmaker Hilfe";
+
+/* Class = "NSTextFieldCell"; title = "Modul:"; ObjectID = "542"; */
+"542.title" = "Modul:";
+
+/* Class = "NSTextFieldCell"; title = "Zähne:"; ObjectID = "547"; */
+"547.title" = "Zähne:";
+
+/* Class = "NSTextFieldCell"; title = "Eingriffwinkel:"; ObjectID = "557"; */
+"557.title" = "Eingriffwinkel:";
+
+/* Class = "NSTextFieldCell"; title = "Kopfspiel:"; ObjectID = "578"; */
+"578.title" = "Kopfspiel:";
+
+/* Class = "NSTextFieldCell"; title = "Zahnrad"; ObjectID = "640"; */
+"640.title" = "Zahnrad";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "643"; */
+"643.title" = "Box";
+
+/* Class = "NSTextFieldCell"; title = "3D-Modell"; ObjectID = "655"; */
+"655.title" = "3D-Modell";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "669"; */
+"669.title" = "Box";
+
+/* Class = "NSTextFieldCell"; title = "Dicke:"; ObjectID = "682"; */
+"682.title" = "Dicke:";
+
+/* Class = "NSTextFieldCell"; title = "Punkteabstand:"; ObjectID = "695"; */
+"695.title" = "Punkteabstand:";
+
+/* Class = "NSButtonCell"; title = "Exportieren…"; ObjectID = "732"; */
+"732.title" = "Exportieren…";

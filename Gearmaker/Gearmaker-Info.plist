@@ -4,6 +4,21 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>de</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>Zahnrad</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>de.ferroequinologist.gearmaker.gear</string>
+			</array>
+			<key>NSDocumentClass</key>
+			<string>GearDocument</string>
+		</dict>
+	</array>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
@@ -30,5 +45,45 @@
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>UTExportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>com.apple.property-list</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>Gearmaker Dokument</string>
+			<key>UTTypeIdentifier</key>
+			<string>de.ferroequinologist.gearmaker.gear</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>gear</string>
+				</array>
+			</dict>
+		</dict>
+	</array>
+	<key>UTImportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.text</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>Wavefront OBJ</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.autodesk.obj</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>obj</string>
+				</array>
+			</dict>
+		</dict>
+	</array>
 </dict>
 </plist>

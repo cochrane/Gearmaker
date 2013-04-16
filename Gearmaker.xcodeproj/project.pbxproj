@@ -15,14 +15,20 @@
 		5252F9F516B5B4F0005AFA8C /* GearmakerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252F9F416B5B4F0005AFA8C /* GearmakerTests.m */; };
 		5252FA0016B5B500005AFA8C /* Involute.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252F9FF16B5B500005AFA8C /* Involute.m */; };
 		5252FA0316B5B539005AFA8C /* TestInvolute.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252FA0216B5B539005AFA8C /* TestInvolute.m */; };
-		52AD558216B9C677007F0F0D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 52AD557E16B9C677007F0F0D /* Credits.rtf */; };
-		52AD558316B9C677007F0F0D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52AD558016B9C677007F0F0D /* InfoPlist.strings */; };
-		52AD558416B9C681007F0F0D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52AD558616B9C681007F0F0D /* MainMenu.xib */; };
 		52C86CF016B69E3E00693748 /* Gear.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C86CEF16B69E3E00693748 /* Gear.m */; };
 		52C86CF416B69F9E00693748 /* TestGear.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C86CF316B69F9E00693748 /* TestGear.m */; };
 		52C86CFD16B70B7800693748 /* NSArray+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C86CFC16B70B7800693748 /* NSArray+Map.m */; };
 		52C86D0016B70F8A00693748 /* GearView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C86CFF16B70F8A00693748 /* GearView.m */; };
 		52C86D0316B71A1F00693748 /* Gear3D.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C86D0216B71A1F00693748 /* Gear3D.m */; };
+		52E488B5171DA2A000ED6DC9 /* Gear3D+ColladaExport.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E488B4171DA2A000ED6DC9 /* Gear3D+ColladaExport.m */; };
+		52E488BB171DEA3400ED6DC9 /* NSXMLElement+SimplifiedCreation.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E488BA171DEA3400ED6DC9 /* NSXMLElement+SimplifiedCreation.m */; };
+		52E488BF171DF38400ED6DC9 /* ExportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E488BD171DF38400ED6DC9 /* ExportViewController.m */; };
+		52E488C9171DF89600ED6DC9 /* ExportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52E488C6171DF3DE00ED6DC9 /* ExportViewController.xib */; };
+		52E488CA171DF89900ED6DC9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52AD558616B9C681007F0F0D /* MainMenu.xib */; };
+		52E488CB171DF89E00ED6DC9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52AD558016B9C677007F0F0D /* InfoPlist.strings */; };
+		52E488CC171DF8A100ED6DC9 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 52AD557E16B9C677007F0F0D /* Credits.rtf */; };
+		52E488D2171DFC3D00ED6DC9 /* GearDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E488D0171DFC3D00ED6DC9 /* GearDocument.m */; };
+		52E488D3171DFC3D00ED6DC9 /* GearDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52E488D1171DFC3D00ED6DC9 /* GearDocument.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +64,6 @@
 		52653D7816BAAE53001D802F /* Gearmaker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Gearmaker.entitlements; sourceTree = "<group>"; };
 		52AD557F16B9C677007F0F0D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = de; path = Gearmaker/de.lproj/Credits.rtf; sourceTree = "<group>"; };
 		52AD558116B9C677007F0F0D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = Gearmaker/de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		52AD558516B9C681007F0F0D /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		52C86CEE16B69E3E00693748 /* Gear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gear.h; sourceTree = "<group>"; };
 		52C86CEF16B69E3E00693748 /* Gear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gear.m; sourceTree = "<group>"; };
 		52C86CF216B69F9E00693748 /* TestGear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestGear.h; sourceTree = "<group>"; };
@@ -69,6 +74,19 @@
 		52C86CFF16B70F8A00693748 /* GearView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GearView.m; sourceTree = "<group>"; };
 		52C86D0116B71A1F00693748 /* Gear3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gear3D.h; sourceTree = "<group>"; };
 		52C86D0216B71A1F00693748 /* Gear3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gear3D.m; sourceTree = "<group>"; };
+		52E488B3171DA2A000ED6DC9 /* Gear3D+ColladaExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Gear3D+ColladaExport.h"; sourceTree = "<group>"; };
+		52E488B4171DA2A000ED6DC9 /* Gear3D+ColladaExport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Gear3D+ColladaExport.m"; sourceTree = "<group>"; };
+		52E488B9171DEA3400ED6DC9 /* NSXMLElement+SimplifiedCreation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSXMLElement+SimplifiedCreation.h"; sourceTree = "<group>"; };
+		52E488BA171DEA3400ED6DC9 /* NSXMLElement+SimplifiedCreation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSXMLElement+SimplifiedCreation.m"; sourceTree = "<group>"; };
+		52E488BC171DF38400ED6DC9 /* ExportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExportViewController.h; sourceTree = "<group>"; };
+		52E488BD171DF38400ED6DC9 /* ExportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExportViewController.m; sourceTree = "<group>"; };
+		52E488C1171DF3B500ED6DC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		52E488C3171DF3BF00ED6DC9 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		52E488C7171DF3E200ED6DC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ExportViewController.xib; sourceTree = "<group>"; };
+		52E488C8171DF3E700ED6DC9 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/ExportViewController.strings; sourceTree = "<group>"; };
+		52E488CF171DFC3C00ED6DC9 /* GearDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GearDocument.h; sourceTree = "<group>"; };
+		52E488D0171DFC3D00ED6DC9 /* GearDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GearDocument.m; sourceTree = "<group>"; };
+		52E488D1171DFC3D00ED6DC9 /* GearDocument.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GearDocument.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +167,16 @@
 				52C86CFF16B70F8A00693748 /* GearView.m */,
 				52C86D0116B71A1F00693748 /* Gear3D.h */,
 				52C86D0216B71A1F00693748 /* Gear3D.m */,
+				52E488B3171DA2A000ED6DC9 /* Gear3D+ColladaExport.h */,
+				52E488B4171DA2A000ED6DC9 /* Gear3D+ColladaExport.m */,
+				52E488B9171DEA3400ED6DC9 /* NSXMLElement+SimplifiedCreation.h */,
+				52E488BA171DEA3400ED6DC9 /* NSXMLElement+SimplifiedCreation.m */,
+				52E488BC171DF38400ED6DC9 /* ExportViewController.h */,
+				52E488BD171DF38400ED6DC9 /* ExportViewController.m */,
+				52E488C6171DF3DE00ED6DC9 /* ExportViewController.xib */,
+				52E488CF171DFC3C00ED6DC9 /* GearDocument.h */,
+				52E488D0171DFC3D00ED6DC9 /* GearDocument.m */,
+				52E488D1171DFC3D00ED6DC9 /* GearDocument.xib */,
 			);
 			path = Gearmaker;
 			sourceTree = "<group>";
@@ -242,6 +270,7 @@
 			knownRegions = (
 				en,
 				de,
+				Base,
 			);
 			mainGroup = 5252F9BB16B5B4F0005AFA8C;
 			productRefGroup = 5252F9C716B5B4F0005AFA8C /* Products */;
@@ -259,9 +288,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52AD558416B9C681007F0F0D /* MainMenu.xib in Resources */,
-				52AD558216B9C677007F0F0D /* Credits.rtf in Resources */,
-				52AD558316B9C677007F0F0D /* InfoPlist.strings in Resources */,
+				52E488C9171DF89600ED6DC9 /* ExportViewController.xib in Resources */,
+				52E488CA171DF89900ED6DC9 /* MainMenu.xib in Resources */,
+				52E488CC171DF8A100ED6DC9 /* Credits.rtf in Resources */,
+				52E488CB171DF89E00ED6DC9 /* InfoPlist.strings in Resources */,
+				52E488D3171DFC3D00ED6DC9 /* GearDocument.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +333,10 @@
 				52C86CFD16B70B7800693748 /* NSArray+Map.m in Sources */,
 				52C86D0016B70F8A00693748 /* GearView.m in Sources */,
 				52C86D0316B71A1F00693748 /* Gear3D.m in Sources */,
+				52E488B5171DA2A000ED6DC9 /* Gear3D+ColladaExport.m in Sources */,
+				52E488BB171DEA3400ED6DC9 /* NSXMLElement+SimplifiedCreation.m in Sources */,
+				52E488BF171DF38400ED6DC9 /* ExportViewController.m in Sources */,
+				52E488D2171DFC3D00ED6DC9 /* GearDocument.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,9 +382,19 @@
 		52AD558616B9C681007F0F0D /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				52AD558516B9C681007F0F0D /* de */,
+				52E488C1171DF3B500ED6DC9 /* Base */,
+				52E488C3171DF3BF00ED6DC9 /* de */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		52E488C6171DF3DE00ED6DC9 /* ExportViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52E488C7171DF3E200ED6DC9 /* Base */,
+				52E488C8171DF3E700ED6DC9 /* de */,
+			);
+			name = ExportViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -422,6 +467,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Gearmaker/Gearmaker.entitlements;
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gearmaker/Gearmaker-Prefix.pch";
@@ -435,6 +481,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Gearmaker/Gearmaker.entitlements;
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gearmaker/Gearmaker-Prefix.pch";

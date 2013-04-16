@@ -18,5 +18,10 @@
 @property (nonatomic) CGFloat pointInterval;
 
 @property (nonatomic, readonly) NSString *objString;
+@property (nonatomic, readonly) NSString *triangulatedObjString;
+
+@property (nonatomic, readonly) NSArray *vertices; // array of nsvalues of three floats
+@property (nonatomic, readonly) NSArray *polygons; // contains arrays with indices into vertices (+1)
+@property (nonatomic, readonly) NSArray *triangulatedElements; // contains indices into vertices (+1)
 
 @end
