@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5252F9CB16B5B4F0005AFA8C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5252F9CA16B5B4F0005AFA8C /* Cocoa.framework */; };
 		5252F9D716B5B4F0005AFA8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252F9D616B5B4F0005AFA8C /* main.m */; };
-		5252F9DE16B5B4F0005AFA8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252F9DD16B5B4F0005AFA8C /* AppDelegate.m */; };
 		5252F9E916B5B4F0005AFA8C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5252F9E816B5B4F0005AFA8C /* SenTestingKit.framework */; };
 		5252F9EA16B5B4F0005AFA8C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5252F9CA16B5B4F0005AFA8C /* Cocoa.framework */; };
 		5252F9F516B5B4F0005AFA8C /* GearmakerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252F9F416B5B4F0005AFA8C /* GearmakerTests.m */; };
@@ -50,8 +49,6 @@
 		5252F9D216B5B4F0005AFA8C /* Gearmaker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Gearmaker-Info.plist"; sourceTree = "<group>"; };
 		5252F9D616B5B4F0005AFA8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5252F9D816B5B4F0005AFA8C /* Gearmaker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gearmaker-Prefix.pch"; sourceTree = "<group>"; };
-		5252F9DC16B5B4F0005AFA8C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		5252F9DD16B5B4F0005AFA8C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5252F9E716B5B4F0005AFA8C /* GearmakerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GearmakerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5252F9E816B5B4F0005AFA8C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		5252F9EF16B5B4F0005AFA8C /* GearmakerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GearmakerTests-Info.plist"; sourceTree = "<group>"; };
@@ -155,8 +152,6 @@
 				52653D7816BAAE53001D802F /* Gearmaker.entitlements */,
 				52C86CFB16B70B7800693748 /* NSArray+Map.h */,
 				52C86CFC16B70B7800693748 /* NSArray+Map.m */,
-				5252F9DC16B5B4F0005AFA8C /* AppDelegate.h */,
-				5252F9DD16B5B4F0005AFA8C /* AppDelegate.m */,
 				52AD558616B9C681007F0F0D /* MainMenu.xib */,
 				5252F9D116B5B4F0005AFA8C /* Supporting Files */,
 				5252F9FE16B5B500005AFA8C /* Involute.h */,
@@ -327,7 +322,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5252F9D716B5B4F0005AFA8C /* main.m in Sources */,
-				5252F9DE16B5B4F0005AFA8C /* AppDelegate.m in Sources */,
 				5252FA0016B5B500005AFA8C /* Involute.m in Sources */,
 				52C86CF016B69E3E00693748 /* Gear.m in Sources */,
 				52C86CFD16B70B7800693748 /* NSArray+Map.m in Sources */,
