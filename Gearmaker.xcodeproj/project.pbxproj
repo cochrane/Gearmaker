@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		520ED80C171F439100BB4B23 /* Gear+ExportAsPDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 520ED80B171F439100BB4B23 /* Gear+ExportAsPDF.m */; };
 		5252F9CB16B5B4F0005AFA8C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5252F9CA16B5B4F0005AFA8C /* Cocoa.framework */; };
 		5252F9D716B5B4F0005AFA8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252F9D616B5B4F0005AFA8C /* main.m */; };
 		5252F9E916B5B4F0005AFA8C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5252F9E816B5B4F0005AFA8C /* SenTestingKit.framework */; };
@@ -15,6 +14,10 @@
 		5252F9F516B5B4F0005AFA8C /* GearmakerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252F9F416B5B4F0005AFA8C /* GearmakerTests.m */; };
 		5252FA0016B5B500005AFA8C /* Involute.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252F9FF16B5B500005AFA8C /* Involute.m */; };
 		5252FA0316B5B539005AFA8C /* TestInvolute.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252FA0216B5B539005AFA8C /* TestInvolute.m */; };
+		52846599172155060018C3E7 /* icon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 52846598172155060018C3E7 /* icon.iconset */; };
+		528465A9172161430018C3E7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52AD558016B9C677007F0F0D /* InfoPlist.strings */; };
+		528465AA172161480018C3E7 /* GearDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5284659C1721589D0018C3E7 /* GearDocument.xib */; };
+		528465AB1721614E0018C3E7 /* ExportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52E488C6171DF3DE00ED6DC9 /* ExportViewController.xib */; };
 		52C86CF016B69E3E00693748 /* Gear.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C86CEF16B69E3E00693748 /* Gear.m */; };
 		52C86CF416B69F9E00693748 /* TestGear.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C86CF316B69F9E00693748 /* TestGear.m */; };
 		52C86CFD16B70B7800693748 /* NSArray+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C86CFC16B70B7800693748 /* NSArray+Map.m */; };
@@ -23,12 +26,9 @@
 		52E488B5171DA2A000ED6DC9 /* Gear3D+ColladaExport.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E488B4171DA2A000ED6DC9 /* Gear3D+ColladaExport.m */; };
 		52E488BB171DEA3400ED6DC9 /* NSXMLElement+SimplifiedCreation.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E488BA171DEA3400ED6DC9 /* NSXMLElement+SimplifiedCreation.m */; };
 		52E488BF171DF38400ED6DC9 /* ExportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E488BD171DF38400ED6DC9 /* ExportViewController.m */; };
-		52E488C9171DF89600ED6DC9 /* ExportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52E488C6171DF3DE00ED6DC9 /* ExportViewController.xib */; };
 		52E488CA171DF89900ED6DC9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52AD558616B9C681007F0F0D /* MainMenu.xib */; };
-		52E488CB171DF89E00ED6DC9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52AD558016B9C677007F0F0D /* InfoPlist.strings */; };
 		52E488CC171DF8A100ED6DC9 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 52AD557E16B9C677007F0F0D /* Credits.rtf */; };
 		52E488D2171DFC3D00ED6DC9 /* GearDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E488D0171DFC3D00ED6DC9 /* GearDocument.m */; };
-		52E488D3171DFC3D00ED6DC9 /* GearDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52E488D1171DFC3D00ED6DC9 /* GearDocument.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +62,15 @@
 		5252FA0116B5B539005AFA8C /* TestInvolute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestInvolute.h; sourceTree = "<group>"; };
 		5252FA0216B5B539005AFA8C /* TestInvolute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestInvolute.m; sourceTree = "<group>"; };
 		52653D7816BAAE53001D802F /* Gearmaker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Gearmaker.entitlements; sourceTree = "<group>"; };
+		52846598172155060018C3E7 /* icon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = icon.iconset; sourceTree = SOURCE_ROOT; };
+		5284659D172158A20018C3E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/GearDocument.xib; sourceTree = "<group>"; };
+		528465A7172160860018C3E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = Gearmaker/en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		528465A81721608A0018C3E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Gearmaker/en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		528465AC1721630C0018C3E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ExportViewController.xib; sourceTree = "<group>"; };
+		528465AD1721630C0018C3E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		528465AE172163270018C3E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GearDocument.xib; sourceTree = "<group>"; };
+		528465AF172163350018C3E7 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/GearDocument.xib; sourceTree = "<group>"; };
+		528465B01721633A0018C3E7 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/ExportViewController.xib; sourceTree = "<group>"; };
 		52AD557F16B9C677007F0F0D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = de; path = Gearmaker/de.lproj/Credits.rtf; sourceTree = "<group>"; };
 		52AD558116B9C677007F0F0D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = Gearmaker/de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		52C86CEE16B69E3E00693748 /* Gear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gear.h; sourceTree = "<group>"; };
@@ -83,10 +92,8 @@
 		52E488C1171DF3B500ED6DC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		52E488C3171DF3BF00ED6DC9 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		52E488C7171DF3E200ED6DC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ExportViewController.xib; sourceTree = "<group>"; };
-		52E488C8171DF3E700ED6DC9 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/ExportViewController.strings; sourceTree = "<group>"; };
 		52E488CF171DFC3C00ED6DC9 /* GearDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GearDocument.h; sourceTree = "<group>"; };
 		52E488D0171DFC3D00ED6DC9 /* GearDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GearDocument.m; sourceTree = "<group>"; };
-		52E488D1171DFC3D00ED6DC9 /* GearDocument.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GearDocument.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,7 +181,7 @@
 				52E488C6171DF3DE00ED6DC9 /* ExportViewController.xib */,
 				52E488CF171DFC3C00ED6DC9 /* GearDocument.h */,
 				52E488D0171DFC3D00ED6DC9 /* GearDocument.m */,
-				52E488D1171DFC3D00ED6DC9 /* GearDocument.xib */,
+				5284659C1721589D0018C3E7 /* GearDocument.xib */,
 				520ED80A171F439100BB4B23 /* Gear+ExportAsPDF.h */,
 				520ED80B171F439100BB4B23 /* Gear+ExportAsPDF.m */,
 			);
@@ -184,6 +191,7 @@
 		5252F9D116B5B4F0005AFA8C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				52846598172155060018C3E7 /* icon.iconset */,
 				5252F9D216B5B4F0005AFA8C /* Gearmaker-Info.plist */,
 				52AD557E16B9C677007F0F0D /* Credits.rtf */,
 				52AD558016B9C677007F0F0D /* InfoPlist.strings */,
@@ -288,11 +296,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52E488C9171DF89600ED6DC9 /* ExportViewController.xib in Resources */,
 				52E488CA171DF89900ED6DC9 /* MainMenu.xib in Resources */,
 				52E488CC171DF8A100ED6DC9 /* Credits.rtf in Resources */,
-				52E488CB171DF89E00ED6DC9 /* InfoPlist.strings in Resources */,
-				52E488D3171DFC3D00ED6DC9 /* GearDocument.xib in Resources */,
+				528465A9172161430018C3E7 /* InfoPlist.strings in Resources */,
+				52846599172155060018C3E7 /* icon.iconset in Resources */,
+				528465AA172161480018C3E7 /* GearDocument.xib in Resources */,
+				528465AB1721614E0018C3E7 /* ExportViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,7 +345,6 @@
 				52E488BB171DEA3400ED6DC9 /* NSXMLElement+SimplifiedCreation.m in Sources */,
 				52E488BF171DF38400ED6DC9 /* ExportViewController.m in Sources */,
 				52E488D2171DFC3D00ED6DC9 /* GearDocument.m in Sources */,
-				520ED80C171F439100BB4B23 /* Gear+ExportAsPDF.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,10 +369,21 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		5284659C1721589D0018C3E7 /* GearDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5284659D172158A20018C3E7 /* Base */,
+				528465AE172163270018C3E7 /* en */,
+				528465AF172163350018C3E7 /* de */,
+			);
+			name = GearDocument.xib;
+			sourceTree = "<group>";
+		};
 		52AD557E16B9C677007F0F0D /* Credits.rtf */ = {
 			isa = PBXVariantGroup;
 			children = (
 				52AD557F16B9C677007F0F0D /* de */,
+				528465A7172160860018C3E7 /* en */,
 			);
 			name = Credits.rtf;
 			path = ..;
@@ -374,6 +393,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				52AD558116B9C677007F0F0D /* de */,
+				528465A81721608A0018C3E7 /* en */,
 			);
 			name = InfoPlist.strings;
 			path = ..;
@@ -384,6 +404,7 @@
 			children = (
 				52E488C1171DF3B500ED6DC9 /* Base */,
 				52E488C3171DF3BF00ED6DC9 /* de */,
+				528465AD1721630C0018C3E7 /* en */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -392,7 +413,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				52E488C7171DF3E200ED6DC9 /* Base */,
-				52E488C8171DF3E700ED6DC9 /* de */,
+				528465AC1721630C0018C3E7 /* en */,
+				528465B01721633A0018C3E7 /* de */,
 			);
 			name = ExportViewController.xib;
 			sourceTree = "<group>";
