@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		520ED80C171F439100BB4B23 /* Gear+ExportAsPDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 520ED80B171F439100BB4B23 /* Gear+ExportAsPDF.m */; };
 		5252F9CB16B5B4F0005AFA8C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5252F9CA16B5B4F0005AFA8C /* Cocoa.framework */; };
 		5252F9D716B5B4F0005AFA8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252F9D616B5B4F0005AFA8C /* main.m */; };
 		5252F9E916B5B4F0005AFA8C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5252F9E816B5B4F0005AFA8C /* SenTestingKit.framework */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		520ED80A171F439100BB4B23 /* Gear+ExportAsPDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Gear+ExportAsPDF.h"; sourceTree = "<group>"; };
+		520ED80B171F439100BB4B23 /* Gear+ExportAsPDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Gear+ExportAsPDF.m"; sourceTree = "<group>"; };
 		5252F9C616B5B4F0005AFA8C /* Gearmaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gearmaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5252F9CA16B5B4F0005AFA8C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		5252F9CD16B5B4F0005AFA8C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -172,6 +175,8 @@
 				52E488CF171DFC3C00ED6DC9 /* GearDocument.h */,
 				52E488D0171DFC3D00ED6DC9 /* GearDocument.m */,
 				52E488D1171DFC3D00ED6DC9 /* GearDocument.xib */,
+				520ED80A171F439100BB4B23 /* Gear+ExportAsPDF.h */,
+				520ED80B171F439100BB4B23 /* Gear+ExportAsPDF.m */,
 			);
 			path = Gearmaker;
 			sourceTree = "<group>";
@@ -331,6 +336,7 @@
 				52E488BB171DEA3400ED6DC9 /* NSXMLElement+SimplifiedCreation.m in Sources */,
 				52E488BF171DF38400ED6DC9 /* ExportViewController.m in Sources */,
 				52E488D2171DFC3D00ED6DC9 /* GearDocument.m in Sources */,
+				520ED80C171F439100BB4B23 /* Gear+ExportAsPDF.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
