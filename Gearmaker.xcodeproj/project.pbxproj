@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52379CAC17227FB8006FC1E3 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52379CAB17227FB8006FC1E3 /* QuickLook.framework */; };
+		52379CAE17227FB8006FC1E3 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52379CAD17227FB8006FC1E3 /* ApplicationServices.framework */; };
+		52379CB017227FB8006FC1E3 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52379CAF17227FB8006FC1E3 /* CoreServices.framework */; };
+		52379CB217227FB8006FC1E3 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52379CB117227FB8006FC1E3 /* CoreFoundation.framework */; };
+		52379CB817227FB8006FC1E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52379CB617227FB8006FC1E3 /* InfoPlist.strings */; };
+		52379CBA17227FB8006FC1E3 /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 52379CB917227FB8006FC1E3 /* GenerateThumbnailForURL.c */; };
+		52379CBC17227FB8006FC1E3 /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 52379CBB17227FB8006FC1E3 /* GeneratePreviewForURL.c */; };
+		52379CBE17227FB8006FC1E3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 52379CBD17227FB8006FC1E3 /* main.c */; };
+		52379CC717228084006FC1E3 /* QLPlugin.qlgenerator in CopyFiles */ = {isa = PBXBuildFile; fileRef = 52379CAA17227FB7006FC1E3 /* QLPlugin.qlgenerator */; };
+		52379CCA172281E7006FC1E3 /* GenerateGearImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 52379CC8172281E7006FC1E3 /* GenerateGearImage.h */; };
+		52379CCB172281E7006FC1E3 /* GenerateGearImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 52379CC9172281E7006FC1E3 /* GenerateGearImage.m */; };
+		52379CCE172282C6006FC1E3 /* Involute.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252F9FF16B5B500005AFA8C /* Involute.m */; };
+		52379CCF172282C6006FC1E3 /* Gear.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C86CEF16B69E3E00693748 /* Gear.m */; };
+		52379CD0172287D1006FC1E3 /* NSArray+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C86CFC16B70B7800693748 /* NSArray+Map.m */; };
 		5252F9CB16B5B4F0005AFA8C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5252F9CA16B5B4F0005AFA8C /* Cocoa.framework */; };
 		5252F9D716B5B4F0005AFA8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252F9D616B5B4F0005AFA8C /* main.m */; };
 		5252F9E916B5B4F0005AFA8C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5252F9E816B5B4F0005AFA8C /* SenTestingKit.framework */; };
@@ -33,6 +47,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		52379CC417227FD5006FC1E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5252F9BD16B5B4F0005AFA8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52379CA917227FB7006FC1E3;
+			remoteInfo = QLPlugin;
+		};
 		5252F9EB16B5B4F0005AFA8C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5252F9BD16B5B4F0005AFA8C /* Project object */;
@@ -42,9 +63,35 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		52379CC617228066006FC1E3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/QuickLook;
+			dstSubfolderSpec = 1;
+			files = (
+				52379CC717228084006FC1E3 /* QLPlugin.qlgenerator in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		520ED80A171F439100BB4B23 /* Gear+ExportAsPDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Gear+ExportAsPDF.h"; sourceTree = "<group>"; };
 		520ED80B171F439100BB4B23 /* Gear+ExportAsPDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Gear+ExportAsPDF.m"; sourceTree = "<group>"; };
+		52379CAA17227FB7006FC1E3 /* QLPlugin.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QLPlugin.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
+		52379CAB17227FB8006FC1E3 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		52379CAD17227FB8006FC1E3 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		52379CAF17227FB8006FC1E3 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		52379CB117227FB8006FC1E3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		52379CB517227FB8006FC1E3 /* QLPlugin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QLPlugin-Info.plist"; sourceTree = "<group>"; };
+		52379CB717227FB8006FC1E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		52379CB917227FB8006FC1E3 /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
+		52379CBB17227FB8006FC1E3 /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
+		52379CBD17227FB8006FC1E3 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		52379CBF17227FB8006FC1E3 /* QLPlugin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QLPlugin-Prefix.pch"; sourceTree = "<group>"; };
+		52379CC8172281E7006FC1E3 /* GenerateGearImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerateGearImage.h; sourceTree = "<group>"; };
+		52379CC9172281E7006FC1E3 /* GenerateGearImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenerateGearImage.m; sourceTree = "<group>"; };
 		5252F9C616B5B4F0005AFA8C /* Gearmaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gearmaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5252F9CA16B5B4F0005AFA8C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		5252F9CD16B5B4F0005AFA8C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -99,6 +146,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		52379CA517227FB7006FC1E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52379CAC17227FB8006FC1E3 /* QuickLook.framework in Frameworks */,
+				52379CAE17227FB8006FC1E3 /* ApplicationServices.framework in Frameworks */,
+				52379CB017227FB8006FC1E3 /* CoreServices.framework in Frameworks */,
+				52379CB217227FB8006FC1E3 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5252F9C316B5B4F0005AFA8C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -119,11 +177,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52379CB317227FB8006FC1E3 /* QLPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				52379CB917227FB8006FC1E3 /* GenerateThumbnailForURL.c */,
+				52379CBB17227FB8006FC1E3 /* GeneratePreviewForURL.c */,
+				52379CBD17227FB8006FC1E3 /* main.c */,
+				52379CB417227FB8006FC1E3 /* Supporting Files */,
+				52379CC8172281E7006FC1E3 /* GenerateGearImage.h */,
+				52379CC9172281E7006FC1E3 /* GenerateGearImage.m */,
+			);
+			path = QLPlugin;
+			sourceTree = "<group>";
+		};
+		52379CB417227FB8006FC1E3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52379CB517227FB8006FC1E3 /* QLPlugin-Info.plist */,
+				52379CB617227FB8006FC1E3 /* InfoPlist.strings */,
+				52379CBF17227FB8006FC1E3 /* QLPlugin-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		5252F9BB16B5B4F0005AFA8C = {
 			isa = PBXGroup;
 			children = (
 				5252F9D016B5B4F0005AFA8C /* Gearmaker */,
 				5252F9ED16B5B4F0005AFA8C /* GearmakerTests */,
+				52379CB317227FB8006FC1E3 /* QLPlugin */,
 				5252F9C916B5B4F0005AFA8C /* Frameworks */,
 				5252F9C716B5B4F0005AFA8C /* Products */,
 			);
@@ -134,6 +216,7 @@
 			children = (
 				5252F9C616B5B4F0005AFA8C /* Gearmaker.app */,
 				5252F9E716B5B4F0005AFA8C /* GearmakerTests.octest */,
+				52379CAA17227FB7006FC1E3 /* QLPlugin.qlgenerator */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,6 +226,10 @@
 			children = (
 				5252F9CA16B5B4F0005AFA8C /* Cocoa.framework */,
 				5252F9E816B5B4F0005AFA8C /* SenTestingKit.framework */,
+				52379CAB17227FB8006FC1E3 /* QuickLook.framework */,
+				52379CAD17227FB8006FC1E3 /* ApplicationServices.framework */,
+				52379CAF17227FB8006FC1E3 /* CoreServices.framework */,
+				52379CB117227FB8006FC1E3 /* CoreFoundation.framework */,
 				5252F9CC16B5B4F0005AFA8C /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -228,7 +315,37 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		52379CA617227FB7006FC1E3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52379CCA172281E7006FC1E3 /* GenerateGearImage.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		52379CA917227FB7006FC1E3 /* QLPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52379CC017227FB8006FC1E3 /* Build configuration list for PBXNativeTarget "QLPlugin" */;
+			buildPhases = (
+				52379CA417227FB7006FC1E3 /* Sources */,
+				52379CA517227FB7006FC1E3 /* Frameworks */,
+				52379CA617227FB7006FC1E3 /* Headers */,
+				52379CA717227FB7006FC1E3 /* Resources */,
+				52379CA817227FB7006FC1E3 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QLPlugin;
+			productName = QLPlugin;
+			productReference = 52379CAA17227FB7006FC1E3 /* QLPlugin.qlgenerator */;
+			productType = "com.apple.product-type.bundle";
+		};
 		5252F9C516B5B4F0005AFA8C /* Gearmaker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5252F9F816B5B4F0005AFA8C /* Build configuration list for PBXNativeTarget "Gearmaker" */;
@@ -236,10 +353,12 @@
 				5252F9C216B5B4F0005AFA8C /* Sources */,
 				5252F9C316B5B4F0005AFA8C /* Frameworks */,
 				5252F9C416B5B4F0005AFA8C /* Resources */,
+				52379CC617228066006FC1E3 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				52379CC517227FD5006FC1E3 /* PBXTargetDependency */,
 			);
 			name = Gearmaker;
 			productName = Gearmaker;
@@ -290,11 +409,20 @@
 			targets = (
 				5252F9C516B5B4F0005AFA8C /* Gearmaker */,
 				5252F9E616B5B4F0005AFA8C /* GearmakerTests */,
+				52379CA917227FB7006FC1E3 /* QLPlugin */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		52379CA717227FB7006FC1E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52379CB817227FB8006FC1E3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5252F9C416B5B4F0005AFA8C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -318,6 +446,16 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXRezBuildPhase section */
+		52379CA817227FB7006FC1E3 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
 /* Begin PBXShellScriptBuildPhase section */
 		5252F9E516B5B4F0005AFA8C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -335,6 +473,20 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		52379CA417227FB7006FC1E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52379CBA17227FB8006FC1E3 /* GenerateThumbnailForURL.c in Sources */,
+				52379CBC17227FB8006FC1E3 /* GeneratePreviewForURL.c in Sources */,
+				52379CBE17227FB8006FC1E3 /* main.c in Sources */,
+				52379CCB172281E7006FC1E3 /* GenerateGearImage.m in Sources */,
+				52379CCE172282C6006FC1E3 /* Involute.m in Sources */,
+				52379CCF172282C6006FC1E3 /* Gear.m in Sources */,
+				52379CD0172287D1006FC1E3 /* NSArray+Map.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5252F9C216B5B4F0005AFA8C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -365,6 +517,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		52379CC517227FD5006FC1E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52379CA917227FB7006FC1E3 /* QLPlugin */;
+			targetProxy = 52379CC417227FD5006FC1E3 /* PBXContainerItemProxy */;
+		};
 		5252F9EC16B5B4F0005AFA8C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5252F9C516B5B4F0005AFA8C /* Gearmaker */;
@@ -373,6 +530,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		52379CB617227FB8006FC1E3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52379CB717227FB8006FC1E3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		5284659C1721589D0018C3E7 /* GearDocument.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -426,6 +591,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		52379CC117227FB8006FC1E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QLPlugin/QLPlugin-Prefix.pch";
+				INFOPLIST_FILE = "QLPlugin/QLPlugin-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Debug;
+		};
+		52379CC217227FB8006FC1E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QLPlugin/QLPlugin-Prefix.pch";
+				INFOPLIST_FILE = "QLPlugin/QLPlugin-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Release;
+		};
 		5252F9F616B5B4F0005AFA8C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -550,6 +747,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		52379CC017227FB8006FC1E3 /* Build configuration list for PBXNativeTarget "QLPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52379CC117227FB8006FC1E3 /* Debug */,
+				52379CC217227FB8006FC1E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		5252F9C016B5B4F0005AFA8C /* Build configuration list for PBXProject "Gearmaker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

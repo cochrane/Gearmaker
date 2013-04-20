@@ -58,10 +58,10 @@
 	[transform translateXBy:NSMidX(self.bounds) yBy:NSMidY(self.bounds)];
 	
 	// Draw teilkreis
-//	[[NSColor redColor] set];
-//	CGFloat teilkreisRadius = self.gear.teilkreisdurchmesser * 0.5;
-//	NSBezierPath *teilkreisPath = [NSBezierPath bezierPathWithOvalInRect:NSMakeRect(-teilkreisRadius, -teilkreisRadius, teilkreisRadius*2., teilkreisRadius*2.)];
-//	[[transform transformBezierPath:teilkreisPath] stroke];
+	[[NSColor redColor] set];
+	CGFloat teilkreisRadius = self.gear.teilkreisdurchmesser * 0.5;
+	NSBezierPath *teilkreisPath = [NSBezierPath bezierPathWithOvalInRect:NSMakeRect(-teilkreisRadius, -teilkreisRadius, teilkreisRadius*2., teilkreisRadius*2.)];
+	[[transform transformBezierPath:teilkreisPath] stroke];
 	
 	// Draw gear
 	[[NSColor blackColor] set];
