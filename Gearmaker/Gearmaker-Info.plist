@@ -7,6 +7,8 @@
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
+			<key>CFBundleTypeIconFile</key>
+			<string>geardoc.icns</string>
 			<key>CFBundleTypeName</key>
 			<string>Zahnrad</string>
 			<key>CFBundleTypeRole</key>
@@ -54,6 +56,8 @@
 			</array>
 			<key>UTTypeDescription</key>
 			<string>Gearmaker Dokument</string>
+			<key>UTTypeIconFile</key>
+			<string>geardoc.icns</string>
 			<key>UTTypeIdentifier</key>
 			<string>de.ferroequinologist.gearmaker.gear</string>
 			<key>UTTypeTagSpecification</key>

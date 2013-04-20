@@ -14,6 +14,7 @@
 		5252F9F516B5B4F0005AFA8C /* GearmakerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252F9F416B5B4F0005AFA8C /* GearmakerTests.m */; };
 		5252FA0016B5B500005AFA8C /* Involute.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252F9FF16B5B500005AFA8C /* Involute.m */; };
 		5252FA0316B5B539005AFA8C /* TestInvolute.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252FA0216B5B539005AFA8C /* TestInvolute.m */; };
+		526EFB70172206E30066D22A /* geardoc.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 526EFB6F172206E30066D22A /* geardoc.iconset */; };
 		52846599172155060018C3E7 /* icon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 52846598172155060018C3E7 /* icon.iconset */; };
 		528465A9172161430018C3E7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52AD558016B9C677007F0F0D /* InfoPlist.strings */; };
 		528465AA172161480018C3E7 /* GearDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5284659C1721589D0018C3E7 /* GearDocument.xib */; };
@@ -62,6 +63,7 @@
 		5252FA0116B5B539005AFA8C /* TestInvolute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestInvolute.h; sourceTree = "<group>"; };
 		5252FA0216B5B539005AFA8C /* TestInvolute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestInvolute.m; sourceTree = "<group>"; };
 		52653D7816BAAE53001D802F /* Gearmaker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Gearmaker.entitlements; sourceTree = "<group>"; };
+		526EFB6F172206E30066D22A /* geardoc.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = geardoc.iconset; sourceTree = SOURCE_ROOT; };
 		52846598172155060018C3E7 /* icon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = icon.iconset; sourceTree = SOURCE_ROOT; };
 		5284659D172158A20018C3E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/GearDocument.xib; sourceTree = "<group>"; };
 		528465A7172160860018C3E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = Gearmaker/en.lproj/Credits.rtf; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 		5252F9D116B5B4F0005AFA8C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				526EFB6F172206E30066D22A /* geardoc.iconset */,
 				52846598172155060018C3E7 /* icon.iconset */,
 				5252F9D216B5B4F0005AFA8C /* Gearmaker-Info.plist */,
 				52AD557E16B9C677007F0F0D /* Credits.rtf */,
@@ -302,6 +305,7 @@
 				52846599172155060018C3E7 /* icon.iconset in Resources */,
 				528465AA172161480018C3E7 /* GearDocument.xib in Resources */,
 				528465AB1721614E0018C3E7 /* ExportViewController.xib in Resources */,
+				526EFB70172206E30066D22A /* geardoc.iconset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
