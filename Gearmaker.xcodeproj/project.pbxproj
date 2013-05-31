@@ -47,13 +47,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		52379CC417227FD5006FC1E3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5252F9BD16B5B4F0005AFA8C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 52379CA917227FB7006FC1E3;
-			remoteInfo = QLPlugin;
-		};
 		5252F9EB16B5B4F0005AFA8C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5252F9BD16B5B4F0005AFA8C /* Project object */;
@@ -67,8 +60,8 @@
 		52379CC617228066006FC1E3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = Contents/Library/QuickLook;
-			dstSubfolderSpec = 1;
+			dstPath = ../Library/QuickLook;
+			dstSubfolderSpec = 7;
 			files = (
 				52379CC717228084006FC1E3 /* QLPlugin.qlgenerator in CopyFiles */,
 			);
@@ -358,7 +351,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				52379CC517227FD5006FC1E3 /* PBXTargetDependency */,
 			);
 			name = Gearmaker;
 			productName = Gearmaker;
@@ -517,11 +509,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		52379CC517227FD5006FC1E3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 52379CA917227FB7006FC1E3 /* QLPlugin */;
-			targetProxy = 52379CC417227FD5006FC1E3 /* PBXContainerItemProxy */;
-		};
 		5252F9EC16B5B4F0005AFA8C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5252F9C516B5B4F0005AFA8C /* Gearmaker */;
@@ -603,6 +590,7 @@
 				INFOPLIST_FILE = "QLPlugin/QLPlugin-Info.plist";
 				INSTALL_PATH = /Library/QuickLook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = qlgenerator;
 			};
 			name = Debug;
@@ -619,6 +607,7 @@
 				INFOPLIST_FILE = "QLPlugin/QLPlugin-Info.plist";
 				INSTALL_PATH = /Library/QuickLook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = qlgenerator;
 			};
 			name = Release;
@@ -654,6 +643,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
 				WARNING_CFLAGS = "-Wall";
 			};
 			name = Debug;
@@ -682,6 +672,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
 				WARNING_CFLAGS = "-Wall";
 			};
 			name = Release;
@@ -690,12 +681,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Gearmaker/Gearmaker.entitlements;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gearmaker/Gearmaker-Prefix.pch";
 				INFOPLIST_FILE = "Gearmaker/Gearmaker-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -704,12 +696,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Gearmaker/Gearmaker.entitlements;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gearmaker/Gearmaker-Prefix.pch";
 				INFOPLIST_FILE = "Gearmaker/Gearmaker-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -754,6 +747,7 @@
 				52379CC217227FB8006FC1E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5252F9C016B5B4F0005AFA8C /* Build configuration list for PBXProject "Gearmaker" */ = {
 			isa = XCConfigurationList;
