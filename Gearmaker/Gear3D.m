@@ -109,21 +109,29 @@
 	NSMutableArray *mutableVertices = [NSMutableArray array];
 	
 	CGFloat halfWidth = self.thickness * 0.5;
-	
+    
 	// Print vertices on top
 	for (NSValue *value in outline.reverseObjectEnumerator)
 	{
 		NSPoint point = value.pointValue;
 		[mutableVertices addObject:[NSValue valueWithBytes:(float [3]) { point.x, halfWidth, point.y } objCType:@encode(float [3])]];
 	}
+    
+
 	
 	// Print vertices below
 	for (NSValue *value in outline.reverseObjectEnumerator)
 	{
 		NSPoint point = value.pointValue;
 		[mutableVertices addObject:[NSValue valueWithBytes:(float [3]) { point.x, -halfWidth, point.y } objCType:@encode(float [3])]];
-
 	}
+    
+    
+    // Create center vertex on top
+    [mutableVertices addObject:[NSValue valueWithBytes:(float [3]) { 0.0f, halfWidth, 0.0f } objCType:@encode(float [3])]];
+    // and below
+    [mutableVertices addObject:[NSValue valueWithBytes:(float [3]) { 0.0f, -halfWidth, 0.0f } objCType:@encode(float [3])]];
+    
 	_vertices = [mutableVertices copy];
 	
 	NSMutableArray *mutablePolygons = [NSMutableArray array];
@@ -154,23 +162,46 @@
 		[mutablePolygons addObject:below];
 	}
 	
-	// Add central face - top
-	NSMutableArray *centralTop = [NSMutableArray array];
+	// Add central faces - top
 	for (NSUInteger i = 0; i < self.gear.teeth; i++)
-	{
-		[centralTop addObject:@( i*pointsPerTeeth+1 )];
-		[centralTop addObject:@( (i+1)*pointsPerTeeth )];
+    {
+        NSUInteger triangleStart = i*pointsPerTeeth+1;
+        NSUInteger triangleEnd = (i+1) * pointsPerTeeth;
+        NSUInteger nextStart = ((i+1)*pointsPerTeeth+1) % outline.count;
+        
+        [mutablePolygons addObject:@[
+                                     @( triangleStart ),
+                                     @( triangleEnd ),
+                                     @( _vertices.count-1 )
+                                     ]];
+        [mutablePolygons addObject:@[
+                                     @( triangleEnd ),
+                                     @( nextStart ),
+                                     @( _vertices.count-1 )
+                                     ]];
 	}
-	[mutablePolygons addObject:centralTop];
 	
-	// Central face - bottom
-	NSMutableArray *centralBottom = [NSMutableArray array];
+	// Central faces - bottom
 	for (NSUInteger i = self.gear.teeth; i > 0; i--)
-	{
-		[centralBottom addObject:@( i*pointsPerTeeth + outline.count )];
-		[centralBottom addObject:@( (i-1)*pointsPerTeeth+1 + outline.count )];
+    {
+        NSUInteger triangleStart = i * pointsPerTeeth;
+        NSUInteger triangleEnd = triangleStart - pointsPerTeeth + 1;
+        NSUInteger nextStart = triangleEnd - 1;
+        if (i == 1) {
+            nextStart = outline.count;
+        }
+        
+        [mutablePolygons addObject:@[
+                                     @( triangleStart + outline.count ),
+                                     @( triangleEnd + outline.count ),
+                                     @( _vertices.count )
+                                     ]];
+        [mutablePolygons addObject:@[
+                                     @( triangleEnd + outline.count ),
+                                     @( nextStart + outline.count ),
+                                     @( _vertices.count )
+                                     ]];
 	}
-	[mutablePolygons addObject:centralBottom];
 	
 	_polygons = [mutablePolygons copy];
 }
