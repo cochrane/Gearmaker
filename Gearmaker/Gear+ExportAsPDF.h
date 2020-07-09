@@ -10,6 +10,7 @@
 
 @interface Gear (ExportAsPDF)
 
-- (void)writePDFToURL:(NSURL *)url;
+- (BOOL)writePDFToURL:(NSURL *)url error:(NSError **)error;
+- (void)drawInContext:(CGContextRef)context size:(CGSize)size;
 
 @end

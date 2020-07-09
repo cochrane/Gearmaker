@@ -1,0 +1,30 @@
+
+/* Class = "NSWindow"; title = "Gearmaker"; ObjectID = "100121"; */
+"100121.title" = "Gearmaker";
+
+/* Class = "NSTextFieldCell"; title = "Gear"; ObjectID = "100193"; */
+"100193.title" = "Gear";
+
+/* Class = "NSTextFieldCell"; title = "Module:"; ObjectID = "100197"; */
+"100197.title" = "Module:";
+
+/* Class = "NSTextFieldCell"; title = "Teeth:"; ObjectID = "100200"; */
+"100200.title" = "Teeth:";
+
+/* Class = "NSTextFieldCell"; title = "Pressure angle:"; ObjectID = "100203"; */
+"100203.title" = "Pressure angle:";
+
+/* Class = "NSTextFieldCell"; title = "Clearance:"; ObjectID = "100206"; */
+"100206.title" = "Clearance:";
+
+/* Class = "NSTextFieldCell"; title = "3D Model"; ObjectID = "100207"; */
+"100207.title" = "3D Model";
+
+/* Class = "NSTextFieldCell"; title = "Thickness:"; ObjectID = "100210"; */
+"100210.title" = "Thickness:";
+
+/* Class = "NSTextFieldCell"; title = "Point distance:"; ObjectID = "100213"; */
+"100213.title" = "Point distance:";
+
+/* Class = "NSButtonCell"; title = "Export…"; ObjectID = "100214"; */
+"100214.title" = "Export…";

@@ -1,0 +1,21 @@
+
+/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "5"; */
+"5.title" = "OtherViews";
+
+/* Class = "NSMenuItem"; title = "DAE (Collada)"; ObjectID = "6"; */
+"6.title" = "DAE (Collada)";
+
+/* Class = "NSMenuItem"; title = "Wavefront OBJ"; ObjectID = "7"; */
+"7.title" = "Wavefront OBJ";
+
+/* Class = "NSTextFieldCell"; title = "Format:"; ObjectID = "13"; */
+"13.title" = "Format:";
+
+/* Class = "NSButtonCell"; title = "Triangulieren"; ObjectID = "18"; */
+"18.title" = "Triangulate";
+
+/* Class = "NSMenuItem"; title = "PDF (2D only)"; ObjectID = "38"; */
+"38.title" = "PDF (2D only)";
+
+/* Class = "NSMenuItem"; title = "SVG (2D only)"; ObjectID = "18i-KP-Wj4"; */
+"18i-KP-Wj4.title" = "SVG (2D only)";

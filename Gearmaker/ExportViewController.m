@@ -14,6 +14,11 @@
 
 @implementation ExportViewController
 
++ (NSSet *)keyPathsForValuesAffectingCanUseTriangulation
+{
+	return [NSSet setWithObjects:@"selectedTypeIndex", nil];
+}
+
 - (id)init
 {
 	if (!(self = [super initWithNibName:[self className] bundle:nil]))
@@ -31,6 +36,10 @@
 		_selectedTypeIndex = 0;
 	else if ([_exportType isEqual:@"com.autodesk.obj"])
 		_selectedTypeIndex = 1;
+	else if ([_exportType isEqual:(__bridge NSString *)kUTTypePDF])
+		_selectedTypeIndex = 2;
+    else if ([_exportType isEqual:(__bridge NSString *)kUTTypeScalableVectorGraphics])
+        _selectedTypeIndex = 3;
 	else
 		_selectedTypeIndex = NSNotFound;
 	
@@ -52,6 +61,10 @@
 		_exportType = @"org.khronos.collada.digital-asset-exchange";
 	else if (_selectedTypeIndex == 1)
 		_exportType = @"com.autodesk.obj";
+        else if (_selectedTypeIndex == 2)
+            _exportType = (__bridge NSString *)kUTTypePDF;
+    else if (_selectedTypeIndex == 3)
+        _exportType = (__bridge NSString *)kUTTypeScalableVectorGraphics;
 	else
 		_exportType = nil;
 	
@@ -65,6 +78,11 @@
 	_useTriangulation = useTriangulation;
 	
 	[[NSUserDefaults standardUserDefaults] setBool:_useTriangulation forKey:@"export-triangulate"];
+}
+
+- (BOOL)canUseTriangulation
+{
+	return ![self.exportType isEqual:(__bridge NSString *) kUTTypePDF];
 }
 
 @end

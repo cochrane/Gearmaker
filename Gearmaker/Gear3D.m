@@ -104,7 +104,7 @@
 
 - (void)_generateData
 {
-	NSArray *outline = [self.gear getOutlinePointsAtInveral:self.pointInterval];
+    NSArray *outline = [self.gear getOutlinePointsAtInveral:self.gear.pointInterval];
 	
 	NSMutableArray *mutableVertices = [NSMutableArray array];
 	

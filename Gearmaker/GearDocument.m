@@ -12,6 +12,8 @@
 #import "Gear.h"
 #import "Gear3D.h"
 #import "Gear3D+ColladaExport.h"
+#import "Gear+ExportAsPDF.h"
+#import "Gear+ExportAsSVG.h"
 #import "GearView.h"
 
 @implementation GearDocument
@@ -25,11 +27,11 @@
 	self.gear.teeth = 30;
 	self.gear.eingriffwinkel = 20.0 * M_PI / 180.0;
 	self.gear.kopfspielfaktor = 0.25;
+    self.gear.pointInterval = 0.1;
 	
 	self.gear3D = [[Gear3D alloc] init];
 	self.gear3D.gear = self.gear;
 	self.gear3D.thickness = 20;
-	self.gear3D.pointInterval = 0.1;
 	
     return self;
 }
@@ -56,7 +58,7 @@
 	@"eingriffwinkel" : @(self.gear.eingriffwinkel),
 	@"kopfspielfaktor" : @(self.gear.kopfspielfaktor),
 	@"dicke" : @(self.gear3D.thickness),
-	@"pointInterval" : @(self.gear3D.pointInterval)
+	@"pointInterval" : @(self.gear.pointInterval)
 	};
 	
 	return [NSPropertyListSerialization dataWithPropertyList:data format:NSPropertyListXMLFormat_v1_0 options:0 error:outError];
@@ -81,9 +83,9 @@
 	self.gear.teeth = [dict[@"zaehne"] unsignedIntegerValue];
 	self.gear.eingriffwinkel = [dict[@"eingriffwinkel"] doubleValue];
 	self.gear.kopfspielfaktor = [dict[@"kopfspielfaktor"] doubleValue];
+    self.gear.pointInterval = [dict[@"pointInterval"] doubleValue];
 	
 	self.gear3D.thickness = [dict[@"dicke"] doubleValue];
-	self.gear3D.pointInterval = [dict[@"pointInterval"] doubleValue];
 	
 	return YES;
 }
@@ -122,6 +124,20 @@
 			if (!success)
 				[self.windowForSheet presentError:error];
 		}
+		else if ([controller.exportType isEqual:(__bridge NSString *)kUTTypePDF])
+        {
+            NSError *error;
+            BOOL success = [self.gear writePDFToURL:savePanel.URL error:&error];
+			if (!success)
+				[self.windowForSheet presentError:error];
+		}
+        else if ([controller.exportType isEqual:(__bridge NSString *)kUTTypeScalableVectorGraphics])
+        {
+            NSError *error;
+            BOOL success = [self.gear writeSVGToURL:savePanel.URL error:&error];
+            if (!success)
+                [self.windowForSheet presentError:error];
+        }
 	}];
 }
 

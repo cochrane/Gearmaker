@@ -10,6 +10,7 @@
 
 @interface ExportViewController : NSViewController
 
+@property (nonatomic, readonly) BOOL canUseTriangulation;
 @property (nonatomic) BOOL useTriangulation;
 @property (nonatomic) NSUInteger selectedTypeIndex;
 

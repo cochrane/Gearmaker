@@ -10,6 +10,7 @@
 
 #import "GenerateGearImage.h"
 #import "Gear.h"
+#import "Gear+ExportAsPDF.h"
 
 _Bool GenerateGearImage(CGContextRef context, CGSize size, CFURLRef url)
 {
@@ -29,32 +30,9 @@ _Bool GenerateGearImage(CGContextRef context, CGSize size, CFURLRef url)
 		gear.teeth = [dict[@"zaehne"] unsignedIntegerValue];
 		gear.eingriffwinkel = [dict[@"eingriffwinkel"] doubleValue];
 		gear.kopfspielfaktor = [dict[@"kopfspielfaktor"] doubleValue];
+        gear.pointInterval = [dict[@"pointInterval"] doubleValue];
 		
-		NSArray *outlinePoints = [gear getOutlinePointsAtInveral:1.0];
-		
-		// Prepare translation
-		CGContextTranslateCTM(context, size.width * 0.5, size.height * 0.5);
-		
-		// Scale
-		CGFloat diameter = gear.kopfkreisdurchmesser * 1.05;
-		CGContextScaleCTM(context, size.width / diameter, size.height / diameter);
-		
-		// Draw gear
-		CGContextBeginPath(context);
-		NSPoint start = [outlinePoints[0] pointValue];
-		CGContextMoveToPoint(context, start.x, start.y);
-		for (NSValue *pointValue in outlinePoints)
-		{
-			NSPoint point = pointValue.pointValue;
-			CGContextAddLineToPoint(context, point.x, point.y);
-		}
-		CGContextClosePath(context);
-		
-		CGContextSetFillColor(context, (CGFloat [4]) { 0.5, 0.5, 0.5, 1.0 });
-		
-		CGContextSetLineWidth(context, 1.0);
-		
-		CGContextDrawPath(context, kCGPathFillStroke);
+		[gear drawInContext:context size:size];
 	}
 	return true;
 }

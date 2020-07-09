@@ -25,6 +25,8 @@
 @property (nonatomic, readonly) CGFloat fusskreisdurchmesser;
 @property (nonatomic, readonly) CGFloat grundkreisdurchmesser;
 
+@property (nonatomic) CGFloat pointInterval;
+
 - (NSArray *)getToothFlankPointsAtIntervals:(CGFloat)interval;
 - (NSArray *)getOutlinePointsAtInveral:(CGFloat)interval;
 

@@ -15,7 +15,6 @@
 @property (nonatomic) Gear *gear;
 
 @property (nonatomic) CGFloat thickness;
-@property (nonatomic) CGFloat pointInterval;
 
 @property (nonatomic, readonly) NSString *objString;
 @property (nonatomic, readonly) NSString *triangulatedObjString;
