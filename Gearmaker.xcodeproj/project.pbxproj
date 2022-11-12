@@ -12,10 +12,8 @@
 		5252FA0016B5B500005AFA8C /* Involute.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252F9FF16B5B500005AFA8C /* Involute.m */; };
 		5264DA102920377400F12694 /* QuickLookThumbnailing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5264D9F92920355A00F12694 /* QuickLookThumbnailing.framework */; };
 		5264DA112920377400F12694 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5264D9FB2920355A00F12694 /* Quartz.framework */; };
-		5264DA152920377400F12694 /* ThumbnailProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 5264DA142920377400F12694 /* ThumbnailProvider.m */; };
 		5264DA1A2920377400F12694 /* ThumbnailExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5264DA0F2920377400F12694 /* ThumbnailExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5264DA262920396F00F12694 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5264D9FB2920355A00F12694 /* Quartz.framework */; };
-		5264DA2D2920396F00F12694 /* PreviewProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 5264DA2C2920396F00F12694 /* PreviewProvider.m */; };
 		5264DA352920396F00F12694 /* PreviewExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5264DA252920396F00F12694 /* PreviewExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5264DA3D29203FFC00F12694 /* Gear.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C86CEF16B69E3E00693748 /* Gear.m */; };
 		5264DA3E29203FFC00F12694 /* Gear.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C86CEF16B69E3E00693748 /* Gear.m */; };
@@ -24,6 +22,8 @@
 		5264DA422920402800F12694 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5264DA412920402800F12694 /* UniformTypeIdentifiers.framework */; };
 		5264DA432920416100F12694 /* Gear+ExportAsPDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 520ED80B171F439100BB4B23 /* Gear+ExportAsPDF.m */; };
 		5264DA442920416100F12694 /* Gear+ExportAsPDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 520ED80B171F439100BB4B23 /* Gear+ExportAsPDF.m */; };
+		5264DA472920425F00F12694 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264DA462920425F00F12694 /* PreviewProvider.swift */; };
+		5264DA4A292043D900F12694 /* ThumbnailProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264DA49292043D900F12694 /* ThumbnailProvider.swift */; };
 		526EFB70172206E30066D22A /* geardoc.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 526EFB6F172206E30066D22A /* geardoc.iconset */; };
 		52846599172155060018C3E7 /* icon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 52846598172155060018C3E7 /* icon.iconset */; };
 		528465A9172161430018C3E7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52AD558016B9C677007F0F0D /* InfoPlist.strings */; };
@@ -115,16 +115,16 @@
 		5264D9F92920355A00F12694 /* QuickLookThumbnailing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLookThumbnailing.framework; path = System/Library/Frameworks/QuickLookThumbnailing.framework; sourceTree = SDKROOT; };
 		5264D9FB2920355A00F12694 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		5264DA0F2920377400F12694 /* ThumbnailExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ThumbnailExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		5264DA132920377400F12694 /* ThumbnailProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThumbnailProvider.h; sourceTree = "<group>"; };
-		5264DA142920377400F12694 /* ThumbnailProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThumbnailProvider.m; sourceTree = "<group>"; };
 		5264DA162920377400F12694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5264DA172920377400F12694 /* ThumbnailExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ThumbnailExtension.entitlements; sourceTree = "<group>"; };
 		5264DA252920396F00F12694 /* PreviewExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PreviewExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		5264DA2B2920396F00F12694 /* PreviewProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreviewProvider.h; sourceTree = "<group>"; };
-		5264DA2C2920396F00F12694 /* PreviewProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreviewProvider.m; sourceTree = "<group>"; };
 		5264DA312920396F00F12694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5264DA322920396F00F12694 /* PreviewExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PreviewExtension.entitlements; sourceTree = "<group>"; };
 		5264DA412920402800F12694 /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
+		5264DA452920425E00F12694 /* PreviewExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PreviewExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		5264DA462920425F00F12694 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		5264DA48292043D800F12694 /* ThumbnailExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ThumbnailExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		5264DA49292043D900F12694 /* ThumbnailProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailProvider.swift; sourceTree = "<group>"; };
 		52653D7816BAAE53001D802F /* Gearmaker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Gearmaker.entitlements; sourceTree = "<group>"; };
 		526EFB6F172206E30066D22A /* geardoc.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = geardoc.iconset; sourceTree = SOURCE_ROOT; };
 		52846598172155060018C3E7 /* icon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = icon.iconset; sourceTree = SOURCE_ROOT; };
@@ -301,10 +301,10 @@
 		5264DA122920377400F12694 /* ThumbnailExtension */ = {
 			isa = PBXGroup;
 			children = (
-				5264DA132920377400F12694 /* ThumbnailProvider.h */,
-				5264DA142920377400F12694 /* ThumbnailProvider.m */,
 				5264DA162920377400F12694 /* Info.plist */,
 				5264DA172920377400F12694 /* ThumbnailExtension.entitlements */,
+				5264DA49292043D900F12694 /* ThumbnailProvider.swift */,
+				5264DA48292043D800F12694 /* ThumbnailExtension-Bridging-Header.h */,
 			);
 			path = ThumbnailExtension;
 			sourceTree = "<group>";
@@ -312,10 +312,10 @@
 		5264DA272920396F00F12694 /* PreviewExtension */ = {
 			isa = PBXGroup;
 			children = (
-				5264DA2B2920396F00F12694 /* PreviewProvider.h */,
-				5264DA2C2920396F00F12694 /* PreviewProvider.m */,
 				5264DA312920396F00F12694 /* Info.plist */,
 				5264DA322920396F00F12694 /* PreviewExtension.entitlements */,
+				5264DA462920425F00F12694 /* PreviewProvider.swift */,
+				5264DA452920425E00F12694 /* PreviewExtension-Bridging-Header.h */,
 			);
 			path = PreviewExtension;
 			sourceTree = "<group>";
@@ -424,11 +424,13 @@
 					5264DA0E2920377400F12694 = {
 						CreatedOnToolsVersion = 14.1;
 						DevelopmentTeam = MXAKMKWG34;
+						LastSwiftMigration = 1410;
 						ProvisioningStyle = Automatic;
 					};
 					5264DA242920396F00F12694 = {
 						CreatedOnToolsVersion = 14.1;
 						DevelopmentTeam = MXAKMKWG34;
+						LastSwiftMigration = 1410;
 						ProvisioningStyle = Automatic;
 					};
 					52C37C9524B7775E00E8D4DA = {
@@ -523,9 +525,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5264DA432920416100F12694 /* Gear+ExportAsPDF.m in Sources */,
-				5264DA152920377400F12694 /* ThumbnailProvider.m in Sources */,
 				5264DA3D29203FFC00F12694 /* Gear.m in Sources */,
 				5264DA3F2920400600F12694 /* Involute.m in Sources */,
+				5264DA4A292043D900F12694 /* ThumbnailProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,9 +536,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5264DA442920416100F12694 /* Gear+ExportAsPDF.m in Sources */,
-				5264DA2D2920396F00F12694 /* PreviewProvider.m in Sources */,
 				5264DA3E29203FFC00F12694 /* Gear.m in Sources */,
 				5264DA402920400600F12694 /* Involute.m in Sources */,
+				5264DA472920425F00F12694 /* PreviewProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -742,6 +744,7 @@
 		5252F9F916B5B4F0005AFA8C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_ENTITLEMENTS = Gearmaker/Gearmaker.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -762,6 +765,7 @@
 		5252F9FA16B5B4F0005AFA8C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_ENTITLEMENTS = Gearmaker/Gearmaker.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -813,6 +817,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ThumbnailExtension/ThumbnailExtension-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -851,6 +858,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ThumbnailExtension/ThumbnailExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -888,6 +897,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PreviewExtension/PreviewExtension-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -926,6 +938,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PreviewExtension/PreviewExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
