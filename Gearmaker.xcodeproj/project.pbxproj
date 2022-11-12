@@ -17,13 +17,13 @@
 		5264DA262920396F00F12694 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5264D9FB2920355A00F12694 /* Quartz.framework */; };
 		5264DA2D2920396F00F12694 /* PreviewProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 5264DA2C2920396F00F12694 /* PreviewProvider.m */; };
 		5264DA352920396F00F12694 /* PreviewExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5264DA252920396F00F12694 /* PreviewExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		5264DA3B29203FE000F12694 /* GenerateGearImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5264DA3929203FE000F12694 /* GenerateGearImage.m */; };
-		5264DA3C29203FE500F12694 /* GenerateGearImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5264DA3929203FE000F12694 /* GenerateGearImage.m */; };
 		5264DA3D29203FFC00F12694 /* Gear.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C86CEF16B69E3E00693748 /* Gear.m */; };
 		5264DA3E29203FFC00F12694 /* Gear.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C86CEF16B69E3E00693748 /* Gear.m */; };
 		5264DA3F2920400600F12694 /* Involute.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252F9FF16B5B500005AFA8C /* Involute.m */; };
 		5264DA402920400600F12694 /* Involute.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252F9FF16B5B500005AFA8C /* Involute.m */; };
 		5264DA422920402800F12694 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5264DA412920402800F12694 /* UniformTypeIdentifiers.framework */; };
+		5264DA432920416100F12694 /* Gear+ExportAsPDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 520ED80B171F439100BB4B23 /* Gear+ExportAsPDF.m */; };
+		5264DA442920416100F12694 /* Gear+ExportAsPDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 520ED80B171F439100BB4B23 /* Gear+ExportAsPDF.m */; };
 		526EFB70172206E30066D22A /* geardoc.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 526EFB6F172206E30066D22A /* geardoc.iconset */; };
 		52846599172155060018C3E7 /* icon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 52846598172155060018C3E7 /* icon.iconset */; };
 		528465A9172161430018C3E7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52AD558016B9C677007F0F0D /* InfoPlist.strings */; };
@@ -124,8 +124,6 @@
 		5264DA2C2920396F00F12694 /* PreviewProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreviewProvider.m; sourceTree = "<group>"; };
 		5264DA312920396F00F12694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5264DA322920396F00F12694 /* PreviewExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PreviewExtension.entitlements; sourceTree = "<group>"; };
-		5264DA3929203FE000F12694 /* GenerateGearImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GenerateGearImage.m; path = QLPlugin/GenerateGearImage.m; sourceTree = SOURCE_ROOT; };
-		5264DA3A29203FE000F12694 /* GenerateGearImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GenerateGearImage.h; path = QLPlugin/GenerateGearImage.h; sourceTree = SOURCE_ROOT; };
 		5264DA412920402800F12694 /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
 		52653D7816BAAE53001D802F /* Gearmaker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Gearmaker.entitlements; sourceTree = "<group>"; };
 		526EFB6F172206E30066D22A /* geardoc.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = geardoc.iconset; sourceTree = SOURCE_ROOT; };
@@ -303,8 +301,6 @@
 		5264DA122920377400F12694 /* ThumbnailExtension */ = {
 			isa = PBXGroup;
 			children = (
-				5264DA3A29203FE000F12694 /* GenerateGearImage.h */,
-				5264DA3929203FE000F12694 /* GenerateGearImage.m */,
 				5264DA132920377400F12694 /* ThumbnailProvider.h */,
 				5264DA142920377400F12694 /* ThumbnailProvider.m */,
 				5264DA162920377400F12694 /* Info.plist */,
@@ -526,9 +522,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5264DA432920416100F12694 /* Gear+ExportAsPDF.m in Sources */,
 				5264DA152920377400F12694 /* ThumbnailProvider.m in Sources */,
 				5264DA3D29203FFC00F12694 /* Gear.m in Sources */,
-				5264DA3B29203FE000F12694 /* GenerateGearImage.m in Sources */,
 				5264DA3F2920400600F12694 /* Involute.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -537,9 +533,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5264DA442920416100F12694 /* Gear+ExportAsPDF.m in Sources */,
 				5264DA2D2920396F00F12694 /* PreviewProvider.m in Sources */,
 				5264DA3E29203FFC00F12694 /* Gear.m in Sources */,
-				5264DA3C29203FE500F12694 /* GenerateGearImage.m in Sources */,
 				5264DA402920400600F12694 /* Involute.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

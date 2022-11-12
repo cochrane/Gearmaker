@@ -8,6 +8,8 @@
 
 #import "Gear.h"
 
+#import <CoreGraphics/CoreGraphics.h>
+
 @interface Gear (ExportAsPDF)
 
 - (BOOL)writePDFToURL:(NSURL *)url error:(NSError **)error;

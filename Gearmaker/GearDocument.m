@@ -64,28 +64,7 @@
 
 - (BOOL)readFromData:(NSData *)data ofType:(NSString *)typeName error:(NSError **)outError
 {
-	NSDictionary *dict = [NSPropertyListSerialization propertyListWithData:data options:NSPropertyListImmutable format:NULL error:outError];
-	if (!dict) return NO;
-	
-	if (!dict[@"zaehne"] || !dict[@"modul"] || !dict[@"kopfspielfaktor"] || !dict[@"eingriffwinkel"] || !dict[@"dicke"] || !dict[@"pointInterval"])
-	{
-		if (outError)
-			*outError = [NSError errorWithDomain:@"GearDocument" code:1 userInfo:@{
-					  NSLocalizedDescriptionKey : NSLocalizedString(@"Dem Dokument fehlen wichtige Daten.", @"not all keys present in file - description"),
-					  NSLocalizedRecoverySuggestionErrorKey : NSLocalizedString(@"Das Dokument ist beschädigt oder in einem Format, dass Gearmaker nicht erkennt.", @"not all keys present in file - recovery suggestion"),
-						 }];
-		return NO;
-	}
-	
-	self.gear.module = [dict[@"modul"] doubleValue];
-	self.gear.teeth = [dict[@"zaehne"] unsignedIntegerValue];
-	self.gear.eingriffwinkel = [dict[@"eingriffwinkel"] doubleValue];
-	self.gear.kopfspielfaktor = [dict[@"kopfspielfaktor"] doubleValue];
-    self.gear.pointInterval = [dict[@"pointInterval"] doubleValue];
-	
-	self.gear.thickness = [dict[@"dicke"] doubleValue];
-	
-	return YES;
+    return [self.gear loadFrom:data error:outError];
 }
 
 - (IBAction)export:(id)sender;

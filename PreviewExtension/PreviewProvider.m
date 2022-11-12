@@ -8,7 +8,8 @@
 
 #import "PreviewProvider.h"
 
-#import "GenerateGearImage.h"
+#import "Gear.h"
+#import "Gear+ExportAsPDF.h"
 
 @implementation PreviewProvider
 
@@ -35,13 +36,23 @@
 
 - (void)providePreviewForFileRequest:(QLFilePreviewRequest *)request completionHandler:(void (^)(QLPreviewReply * _Nullable reply, NSError * _Nullable error))handler
 {
+    NSError *error = nil;
+    NSData *data = [NSData dataWithContentsOfURL:request.fileURL options:0 error:&error];
+    if (!data) {
+        handler(nil, error);
+        return;
+    }
+    Gear *gear = [[Gear alloc] init];
+    if (![gear loadFrom:data error:&error]) {
+        handler(nil, error);
+        return;
+    }
+    
     CGSize size = CGSizeMake(800, 800);
     QLPreviewReply* reply = [[QLPreviewReply alloc] initWithContextSize:CGSizeMake(800, 800) isBitmap:NO drawingBlock:^BOOL(CGContextRef  _Nonnull context, QLPreviewReply * _Nonnull reply, NSError *__autoreleasing  _Nullable * _Nullable error) {
-        return GenerateGearImage(context, size, (__bridge CFURLRef)(request.fileURL));
+        [gear drawInContext:context size:size];
+        return YES;
     }];
-    
-    //You can also create a QLPreviewReply with a fileURL of a supported file type, by drawing directly into a bitmap context, or by providing a PDFDocument.
-    
     handler(reply, nil);
 }
 

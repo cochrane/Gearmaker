@@ -8,17 +8,28 @@
 
 #import "ThumbnailProvider.h"
 
-#import "GenerateGearImage.h"
+#import "Gear.h"
+#import "Gear+ExportAsPDF.h"
 
 @implementation ThumbnailProvider
 
 - (void)provideThumbnailForFileRequest:(QLFileThumbnailRequest *)request completionHandler:(void (^)(QLThumbnailReply * _Nullable, NSError * _Nullable))handler {
+
+    NSError *error = nil;
+    NSData *data = [NSData dataWithContentsOfURL:request.fileURL options:0 error:&error];
+    if (!data) {
+        handler(nil, error);
+        return;
+    }
+    Gear *gear = [[Gear alloc] init];
+    if (![gear loadFrom:data error:&error]) {
+        handler(nil, error);
+        return;
+    }
     
-   // Second way: Draw the thumbnail into a context passed to your block, set up with Core Graphics's coordinate system.
-   // Second way: Draw the thumbnail into a context passed to your block, set up with Core Graphics's coordinate system.
      handler([QLThumbnailReply replyWithContextSize:request.maximumSize drawingBlock:^BOOL(CGContextRef  _Nonnull context) {
-         // Draw the thumbnail here.
-         return GenerateGearImage(context, request.maximumSize, (__bridge CFURLRef)(request.fileURL));
+         [gear drawInContext:context size:request.maximumSize];
+         return YES;
      }], nil);
 }
 
