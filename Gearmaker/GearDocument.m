@@ -8,9 +8,10 @@
 
 #import "GearDocument.h"
 
+#import <UniformTypeIdentifiers/UniformTypeIdentifiers.h>
+
 #import "ExportViewController.h"
 #import "Gear.h"
-#import "Gear3D.h"
 #import "Gear3D+ColladaExport.h"
 #import "Gear+ExportAsPDF.h"
 #import "Gear+ExportAsSVG.h"
@@ -28,10 +29,7 @@
 	self.gear.eingriffwinkel = 20.0 * M_PI / 180.0;
 	self.gear.kopfspielfaktor = 0.25;
     self.gear.pointInterval = 0.1;
-	
-	self.gear3D = [[Gear3D alloc] init];
-	self.gear3D.gear = self.gear;
-	self.gear3D.thickness = 20;
+    self.gear.thickness = 20;
 	
     return self;
 }
@@ -57,7 +55,7 @@
 	@"zaehne" : @(self.gear.teeth),
 	@"eingriffwinkel" : @(self.gear.eingriffwinkel),
 	@"kopfspielfaktor" : @(self.gear.kopfspielfaktor),
-	@"dicke" : @(self.gear3D.thickness),
+	@"dicke" : @(self.gear.thickness),
 	@"pointInterval" : @(self.gear.pointInterval)
 	};
 	
@@ -85,7 +83,7 @@
 	self.gear.kopfspielfaktor = [dict[@"kopfspielfaktor"] doubleValue];
     self.gear.pointInterval = [dict[@"pointInterval"] doubleValue];
 	
-	self.gear3D.thickness = [dict[@"dicke"] doubleValue];
+	self.gear.thickness = [dict[@"dicke"] doubleValue];
 	
 	return YES;
 }
@@ -93,7 +91,6 @@
 - (IBAction)export:(id)sender;
 {
 	[self.gearController commitEditing];
-	[self.gear3DController commitEditing];
 	
 	NSSavePanel *savePanel = [NSSavePanel savePanel];
 	savePanel.canCreateDirectories = YES;
@@ -103,11 +100,11 @@
 	controller.panel = savePanel;
 	
 	[savePanel beginSheetModalForWindow:self.windowForSheet completionHandler:^(NSInteger result){
-		if (result != NSOKButton) return;
+		if (result != NSModalResponseOK) return;
 		
 		if ([controller.exportType isEqual:@"org.khronos.collada.digital-asset-exchange"])
 		{
-			NSXMLDocument *doc = [self.gear3D colladaDocumentUsingTriangulation:controller.useTriangulation];
+			NSXMLDocument *doc = [self.gear colladaDocumentUsingTriangulation:controller.useTriangulation];
 			NSData *data = doc.XMLData;
 			
 			NSError *error;
@@ -117,21 +114,21 @@
 		}
 		else if ([controller.exportType isEqual:@"com.autodesk.obj"])
 		{
-			NSString *string = controller.useTriangulation ? [self.gear3D triangulatedObjString] : [self.gear3D objString];
+			NSString *string = controller.useTriangulation ? [self.gear triangulatedObjString] : [self.gear objString];
 			
 			NSError *error;
 			BOOL success = [string writeToURL:savePanel.URL atomically:YES encoding:NSASCIIStringEncoding error:&error];
 			if (!success)
 				[self.windowForSheet presentError:error];
 		}
-		else if ([controller.exportType isEqual:(__bridge NSString *)kUTTypePDF])
+		else if ([controller.exportType isEqual:[UTTypePDF identifier]])
         {
             NSError *error;
             BOOL success = [self.gear writePDFToURL:savePanel.URL error:&error];
 			if (!success)
 				[self.windowForSheet presentError:error];
 		}
-        else if ([controller.exportType isEqual:(__bridge NSString *)kUTTypeScalableVectorGraphics])
+        else if ([controller.exportType isEqual:[UTTypeSVG identifier]])
         {
             NSError *error;
             BOOL success = [self.gear writeSVGToURL:savePanel.URL error:&error];

@@ -27,7 +27,18 @@
 
 @property (nonatomic) CGFloat pointInterval;
 
+@property (nonatomic) CGFloat thickness;
+
+@property (nonatomic, readonly) NSString *objString;
+@property (nonatomic, readonly) NSString *triangulatedObjString;
+
+@property (nonatomic, readonly) NSArray *vertices; // array of nsvalues of three floats
+@property (nonatomic, readonly) NSArray *polygons; // contains arrays with indices into vertices (+1)
+@property (nonatomic, readonly) NSArray *triangulatedElements; // contains indices into vertices (+1)
+
 - (NSArray *)getToothFlankPointsAtIntervals:(CGFloat)interval;
 - (NSArray *)getOutlinePointsAtInveral:(CGFloat)interval;
+
+- (BOOL)loadFrom:(NSData *)data error:(NSError *__autoreleasing*)error;
 
 @end

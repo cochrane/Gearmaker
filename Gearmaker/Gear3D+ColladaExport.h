@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Torsten Kammer. All rights reserved.
 //
 
-#import "Gear3D.h"
+#import "Gear.h"
 
-@interface Gear3D (ColladaExport)
+@interface Gear (ColladaExport)
 
 - (NSXMLDocument *)colladaDocumentUsingTriangulation:(BOOL)triangulate;
 

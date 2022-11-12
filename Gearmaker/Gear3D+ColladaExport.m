@@ -10,7 +10,7 @@
 
 #import "NSXMLElement+SimplifiedCreation.h"
 
-@implementation Gear3D (ColladaExport)
+@implementation Gear (ColladaExport)
 
 - (NSXMLDocument *)colladaDocumentUsingTriangulation:(BOOL)triangulate;
 {

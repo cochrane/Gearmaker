@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <UniformTypeIdentifiers/UniformTypeIdentifiers.h>
 
 @interface ExportViewController : NSViewController
 
@@ -14,7 +15,8 @@
 @property (nonatomic) BOOL useTriangulation;
 @property (nonatomic) NSUInteger selectedTypeIndex;
 
-@property (nonatomic, readonly) NSString *exportType;
+@property (nonatomic, readonly) NSArray<UTType*>* allowedTypes;
+@property (nonatomic, readonly) UTType *exportType;
 
 @property (nonatomic, weak) NSSavePanel *panel;
 

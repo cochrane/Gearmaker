@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16097" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment version="1070" identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="GearDocument">
             <connections>
                 <outlet property="angleNumberFormatter" destination="100202" id="100228"/>
-                <outlet property="gear3DController" destination="100122" id="100223"/>
                 <outlet property="gearController" destination="100123" id="100224"/>
                 <outlet property="gearView" destination="100126" id="100226"/>
                 <outlet property="window" destination="100121" id="100225"/>
@@ -21,7 +19,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="596" height="398"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1470" height="919"/>
             <view key="contentView" id="100124">
                 <rect key="frame" x="0.0" y="0.0" width="596" height="398"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -160,7 +158,7 @@
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                         <connections>
-                            <binding destination="100122" name="value" keyPath="selection.thickness" id="100219"/>
+                            <binding destination="100123" name="value" keyPath="selection.thickness" id="gXe-LP-7LE"/>
                         </connections>
                     </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="100129">
@@ -209,12 +207,8 @@
             </view>
             <point key="canvasLocation" x="139" y="147"/>
         </window>
-        <objectController objectClassName="Gear3D" id="100122" userLabel="Gear 3D Controller">
-            <connections>
-                <binding destination="-2" name="contentObject" keyPath="gear3D" id="100221"/>
-            </connections>
-        </objectController>
         <objectController objectClassName="Gear" id="100123" userLabel="Gear Controller">
+            <classReference key="objectClass" className="Gear"/>
             <connections>
                 <binding destination="-2" name="contentObject" keyPath="gear" id="100222"/>
             </connections>

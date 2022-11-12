@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		52379CAC17227FB8006FC1E3 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52379CAB17227FB8006FC1E3 /* QuickLook.framework */; };
-		52379CAE17227FB8006FC1E3 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52379CAD17227FB8006FC1E3 /* ApplicationServices.framework */; };
-		52379CB017227FB8006FC1E3 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52379CAF17227FB8006FC1E3 /* CoreServices.framework */; };
-		52379CB217227FB8006FC1E3 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52379CB117227FB8006FC1E3 /* CoreFoundation.framework */; };
-		52379CB817227FB8006FC1E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52379CB617227FB8006FC1E3 /* InfoPlist.strings */; };
-		52379CBA17227FB8006FC1E3 /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 52379CB917227FB8006FC1E3 /* GenerateThumbnailForURL.c */; };
-		52379CBC17227FB8006FC1E3 /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 52379CBB17227FB8006FC1E3 /* GeneratePreviewForURL.c */; };
-		52379CBE17227FB8006FC1E3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 52379CBD17227FB8006FC1E3 /* main.c */; };
-		52379CC717228084006FC1E3 /* QLPlugin.qlgenerator in CopyFiles */ = {isa = PBXBuildFile; fileRef = 52379CAA17227FB7006FC1E3 /* QLPlugin.qlgenerator */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		52379CCA172281E7006FC1E3 /* GenerateGearImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 52379CC8172281E7006FC1E3 /* GenerateGearImage.h */; };
-		52379CCB172281E7006FC1E3 /* GenerateGearImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 52379CC9172281E7006FC1E3 /* GenerateGearImage.m */; };
-		52379CCE172282C6006FC1E3 /* Involute.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252F9FF16B5B500005AFA8C /* Involute.m */; };
-		52379CCF172282C6006FC1E3 /* Gear.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C86CEF16B69E3E00693748 /* Gear.m */; };
-		52379CD0172287D1006FC1E3 /* NSArray+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C86CFC16B70B7800693748 /* NSArray+Map.m */; };
 		5252F9CB16B5B4F0005AFA8C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5252F9CA16B5B4F0005AFA8C /* Cocoa.framework */; };
 		5252F9D716B5B4F0005AFA8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252F9D616B5B4F0005AFA8C /* main.m */; };
 		5252FA0016B5B500005AFA8C /* Involute.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252F9FF16B5B500005AFA8C /* Involute.m */; };
+		5264DA102920377400F12694 /* QuickLookThumbnailing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5264D9F92920355A00F12694 /* QuickLookThumbnailing.framework */; };
+		5264DA112920377400F12694 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5264D9FB2920355A00F12694 /* Quartz.framework */; };
+		5264DA152920377400F12694 /* ThumbnailProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 5264DA142920377400F12694 /* ThumbnailProvider.m */; };
+		5264DA1A2920377400F12694 /* ThumbnailExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5264DA0F2920377400F12694 /* ThumbnailExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5264DA262920396F00F12694 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5264D9FB2920355A00F12694 /* Quartz.framework */; };
+		5264DA2D2920396F00F12694 /* PreviewProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 5264DA2C2920396F00F12694 /* PreviewProvider.m */; };
+		5264DA352920396F00F12694 /* PreviewExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5264DA252920396F00F12694 /* PreviewExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5264DA3B29203FE000F12694 /* GenerateGearImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5264DA3929203FE000F12694 /* GenerateGearImage.m */; };
+		5264DA3C29203FE500F12694 /* GenerateGearImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5264DA3929203FE000F12694 /* GenerateGearImage.m */; };
+		5264DA3D29203FFC00F12694 /* Gear.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C86CEF16B69E3E00693748 /* Gear.m */; };
+		5264DA3E29203FFC00F12694 /* Gear.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C86CEF16B69E3E00693748 /* Gear.m */; };
+		5264DA3F2920400600F12694 /* Involute.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252F9FF16B5B500005AFA8C /* Involute.m */; };
+		5264DA402920400600F12694 /* Involute.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252F9FF16B5B500005AFA8C /* Involute.m */; };
+		5264DA422920402800F12694 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5264DA412920402800F12694 /* UniformTypeIdentifiers.framework */; };
 		526EFB70172206E30066D22A /* geardoc.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 526EFB6F172206E30066D22A /* geardoc.iconset */; };
 		52846599172155060018C3E7 /* icon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 52846598172155060018C3E7 /* icon.iconset */; };
 		528465A9172161430018C3E7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52AD558016B9C677007F0F0D /* InfoPlist.strings */; };
@@ -35,18 +35,30 @@
 		52C86CF016B69E3E00693748 /* Gear.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C86CEF16B69E3E00693748 /* Gear.m */; };
 		52C86CFD16B70B7800693748 /* NSArray+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C86CFC16B70B7800693748 /* NSArray+Map.m */; };
 		52C86D0016B70F8A00693748 /* GearView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C86CFF16B70F8A00693748 /* GearView.m */; };
-		52C86D0316B71A1F00693748 /* Gear3D.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C86D0216B71A1F00693748 /* Gear3D.m */; };
 		52E488B5171DA2A000ED6DC9 /* Gear3D+ColladaExport.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E488B4171DA2A000ED6DC9 /* Gear3D+ColladaExport.m */; };
 		52E488BB171DEA3400ED6DC9 /* NSXMLElement+SimplifiedCreation.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E488BA171DEA3400ED6DC9 /* NSXMLElement+SimplifiedCreation.m */; };
 		52E488BF171DF38400ED6DC9 /* ExportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E488BD171DF38400ED6DC9 /* ExportViewController.m */; };
 		52E488CA171DF89900ED6DC9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52AD558616B9C681007F0F0D /* MainMenu.xib */; };
 		52E488CC171DF8A100ED6DC9 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 52AD557E16B9C677007F0F0D /* Credits.rtf */; };
 		52E488D2171DFC3D00ED6DC9 /* GearDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E488D0171DFC3D00ED6DC9 /* GearDocument.m */; };
-		52E99F351758B0BC0087BC06 /* GenerateGearImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 52379CC9172281E7006FC1E3 /* GenerateGearImage.m */; };
 		52E99F361758B12D0087BC06 /* Gear+ExportAsPDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 520ED80B171F439100BB4B23 /* Gear+ExportAsPDF.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5264DA182920377400F12694 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5252F9BD16B5B4F0005AFA8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5264DA0E2920377400F12694;
+			remoteInfo = ThumbnailExtension;
+		};
+		5264DA332920396F00F12694 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5252F9BD16B5B4F0005AFA8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5264DA242920396F00F12694;
+			remoteInfo = PreviewExtension;
+		};
 		52C37C9B24B7775E00E8D4DA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5252F9BD16B5B4F0005AFA8C /* Project object */;
@@ -63,8 +75,19 @@
 			dstPath = ../Library/QuickLook;
 			dstSubfolderSpec = 7;
 			files = (
-				52379CC717228084006FC1E3 /* QLPlugin.qlgenerator in CopyFiles */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5264DA082920355A00F12694 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5264DA1A2920377400F12694 /* ThumbnailExtension.appex in Embed Foundation Extensions */,
+				5264DA352920396F00F12694 /* PreviewExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -72,19 +95,10 @@
 /* Begin PBXFileReference section */
 		520ED80A171F439100BB4B23 /* Gear+ExportAsPDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Gear+ExportAsPDF.h"; sourceTree = "<group>"; };
 		520ED80B171F439100BB4B23 /* Gear+ExportAsPDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Gear+ExportAsPDF.m"; sourceTree = "<group>"; };
-		52379CAA17227FB7006FC1E3 /* QLPlugin.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QLPlugin.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		52379CAB17227FB8006FC1E3 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		52379CAD17227FB8006FC1E3 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
 		52379CAF17227FB8006FC1E3 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		52379CB117227FB8006FC1E3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		52379CB517227FB8006FC1E3 /* QLPlugin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QLPlugin-Info.plist"; sourceTree = "<group>"; };
-		52379CB717227FB8006FC1E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		52379CB917227FB8006FC1E3 /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
-		52379CBB17227FB8006FC1E3 /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
-		52379CBD17227FB8006FC1E3 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		52379CBF17227FB8006FC1E3 /* QLPlugin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QLPlugin-Prefix.pch"; sourceTree = "<group>"; };
-		52379CC8172281E7006FC1E3 /* GenerateGearImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerateGearImage.h; sourceTree = "<group>"; };
-		52379CC9172281E7006FC1E3 /* GenerateGearImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenerateGearImage.m; sourceTree = "<group>"; };
 		5252F9C616B5B4F0005AFA8C /* Gearmaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gearmaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5252F9CA16B5B4F0005AFA8C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		5252F9CD16B5B4F0005AFA8C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -98,6 +112,21 @@
 		5252F9FF16B5B500005AFA8C /* Involute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Involute.m; sourceTree = "<group>"; };
 		5252FA0116B5B539005AFA8C /* TestInvolute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestInvolute.h; sourceTree = "<group>"; };
 		5252FA0216B5B539005AFA8C /* TestInvolute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestInvolute.m; sourceTree = "<group>"; };
+		5264D9F92920355A00F12694 /* QuickLookThumbnailing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLookThumbnailing.framework; path = System/Library/Frameworks/QuickLookThumbnailing.framework; sourceTree = SDKROOT; };
+		5264D9FB2920355A00F12694 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		5264DA0F2920377400F12694 /* ThumbnailExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ThumbnailExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5264DA132920377400F12694 /* ThumbnailProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThumbnailProvider.h; sourceTree = "<group>"; };
+		5264DA142920377400F12694 /* ThumbnailProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThumbnailProvider.m; sourceTree = "<group>"; };
+		5264DA162920377400F12694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5264DA172920377400F12694 /* ThumbnailExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ThumbnailExtension.entitlements; sourceTree = "<group>"; };
+		5264DA252920396F00F12694 /* PreviewExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PreviewExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5264DA2B2920396F00F12694 /* PreviewProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreviewProvider.h; sourceTree = "<group>"; };
+		5264DA2C2920396F00F12694 /* PreviewProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreviewProvider.m; sourceTree = "<group>"; };
+		5264DA312920396F00F12694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5264DA322920396F00F12694 /* PreviewExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PreviewExtension.entitlements; sourceTree = "<group>"; };
+		5264DA3929203FE000F12694 /* GenerateGearImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GenerateGearImage.m; path = QLPlugin/GenerateGearImage.m; sourceTree = SOURCE_ROOT; };
+		5264DA3A29203FE000F12694 /* GenerateGearImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GenerateGearImage.h; path = QLPlugin/GenerateGearImage.h; sourceTree = SOURCE_ROOT; };
+		5264DA412920402800F12694 /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
 		52653D7816BAAE53001D802F /* Gearmaker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Gearmaker.entitlements; sourceTree = "<group>"; };
 		526EFB6F172206E30066D22A /* geardoc.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = geardoc.iconset; sourceTree = SOURCE_ROOT; };
 		52846598172155060018C3E7 /* icon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = icon.iconset; sourceTree = SOURCE_ROOT; };
@@ -124,8 +153,6 @@
 		52C86CFC16B70B7800693748 /* NSArray+Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Map.m"; sourceTree = "<group>"; };
 		52C86CFE16B70F8A00693748 /* GearView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GearView.h; sourceTree = "<group>"; };
 		52C86CFF16B70F8A00693748 /* GearView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GearView.m; sourceTree = "<group>"; };
-		52C86D0116B71A1F00693748 /* Gear3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gear3D.h; sourceTree = "<group>"; };
-		52C86D0216B71A1F00693748 /* Gear3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gear3D.m; sourceTree = "<group>"; };
 		52E488B3171DA2A000ED6DC9 /* Gear3D+ColladaExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Gear3D+ColladaExport.h"; sourceTree = "<group>"; };
 		52E488B4171DA2A000ED6DC9 /* Gear3D+ColladaExport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Gear3D+ColladaExport.m"; sourceTree = "<group>"; };
 		52E488B9171DEA3400ED6DC9 /* NSXMLElement+SimplifiedCreation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSXMLElement+SimplifiedCreation.h"; sourceTree = "<group>"; };
@@ -140,22 +167,29 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		52379CA517227FB7006FC1E3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				52379CAC17227FB8006FC1E3 /* QuickLook.framework in Frameworks */,
-				52379CAE17227FB8006FC1E3 /* ApplicationServices.framework in Frameworks */,
-				52379CB017227FB8006FC1E3 /* CoreServices.framework in Frameworks */,
-				52379CB217227FB8006FC1E3 /* CoreFoundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5252F9C316B5B4F0005AFA8C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5264DA422920402800F12694 /* UniformTypeIdentifiers.framework in Frameworks */,
 				5252F9CB16B5B4F0005AFA8C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5264DA0C2920377400F12694 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5264DA102920377400F12694 /* QuickLookThumbnailing.framework in Frameworks */,
+				5264DA112920377400F12694 /* Quartz.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5264DA222920396F00F12694 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5264DA262920396F00F12694 /* Quartz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,35 +203,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		52379CB317227FB8006FC1E3 /* QLPlugin */ = {
-			isa = PBXGroup;
-			children = (
-				52379CB917227FB8006FC1E3 /* GenerateThumbnailForURL.c */,
-				52379CBB17227FB8006FC1E3 /* GeneratePreviewForURL.c */,
-				52379CBD17227FB8006FC1E3 /* main.c */,
-				52379CB417227FB8006FC1E3 /* Supporting Files */,
-				52379CC8172281E7006FC1E3 /* GenerateGearImage.h */,
-				52379CC9172281E7006FC1E3 /* GenerateGearImage.m */,
-			);
-			path = QLPlugin;
-			sourceTree = "<group>";
-		};
-		52379CB417227FB8006FC1E3 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				52379CB517227FB8006FC1E3 /* QLPlugin-Info.plist */,
-				52379CB617227FB8006FC1E3 /* InfoPlist.strings */,
-				52379CBF17227FB8006FC1E3 /* QLPlugin-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		5252F9BB16B5B4F0005AFA8C = {
 			isa = PBXGroup;
 			children = (
 				5252F9D016B5B4F0005AFA8C /* Gearmaker */,
-				52379CB317227FB8006FC1E3 /* QLPlugin */,
 				52C37C9724B7775E00E8D4DA /* GearmakerTests */,
+				5264DA122920377400F12694 /* ThumbnailExtension */,
+				5264DA272920396F00F12694 /* PreviewExtension */,
 				5252F9C916B5B4F0005AFA8C /* Frameworks */,
 				5252F9C716B5B4F0005AFA8C /* Products */,
 			);
@@ -207,8 +219,9 @@
 			isa = PBXGroup;
 			children = (
 				5252F9C616B5B4F0005AFA8C /* Gearmaker.app */,
-				52379CAA17227FB7006FC1E3 /* QLPlugin.qlgenerator */,
 				52C37C9624B7775E00E8D4DA /* GearmakerTests.xctest */,
+				5264DA0F2920377400F12694 /* ThumbnailExtension.appex */,
+				5264DA252920396F00F12694 /* PreviewExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -216,6 +229,7 @@
 		5252F9C916B5B4F0005AFA8C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5264DA412920402800F12694 /* UniformTypeIdentifiers.framework */,
 				52C37C8B24B7735600E8D4DA /* XCTest.framework */,
 				5252F9CA16B5B4F0005AFA8C /* Cocoa.framework */,
 				5252F9E816B5B4F0005AFA8C /* SenTestingKit.framework */,
@@ -223,6 +237,8 @@
 				52379CAD17227FB8006FC1E3 /* ApplicationServices.framework */,
 				52379CAF17227FB8006FC1E3 /* CoreServices.framework */,
 				52379CB117227FB8006FC1E3 /* CoreFoundation.framework */,
+				5264D9F92920355A00F12694 /* QuickLookThumbnailing.framework */,
+				5264D9FB2920355A00F12694 /* Quartz.framework */,
 				5252F9CC16B5B4F0005AFA8C /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -252,8 +268,6 @@
 				52C86CEF16B69E3E00693748 /* Gear.m */,
 				52C86CFE16B70F8A00693748 /* GearView.h */,
 				52C86CFF16B70F8A00693748 /* GearView.m */,
-				52C86D0116B71A1F00693748 /* Gear3D.h */,
-				52C86D0216B71A1F00693748 /* Gear3D.m */,
 				52E488B3171DA2A000ED6DC9 /* Gear3D+ColladaExport.h */,
 				52E488B4171DA2A000ED6DC9 /* Gear3D+ColladaExport.m */,
 				52E488B9171DEA3400ED6DC9 /* NSXMLElement+SimplifiedCreation.h */,
@@ -286,6 +300,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5264DA122920377400F12694 /* ThumbnailExtension */ = {
+			isa = PBXGroup;
+			children = (
+				5264DA3A29203FE000F12694 /* GenerateGearImage.h */,
+				5264DA3929203FE000F12694 /* GenerateGearImage.m */,
+				5264DA132920377400F12694 /* ThumbnailProvider.h */,
+				5264DA142920377400F12694 /* ThumbnailProvider.m */,
+				5264DA162920377400F12694 /* Info.plist */,
+				5264DA172920377400F12694 /* ThumbnailExtension.entitlements */,
+			);
+			path = ThumbnailExtension;
+			sourceTree = "<group>";
+		};
+		5264DA272920396F00F12694 /* PreviewExtension */ = {
+			isa = PBXGroup;
+			children = (
+				5264DA2B2920396F00F12694 /* PreviewProvider.h */,
+				5264DA2C2920396F00F12694 /* PreviewProvider.m */,
+				5264DA312920396F00F12694 /* Info.plist */,
+				5264DA322920396F00F12694 /* PreviewExtension.entitlements */,
+			);
+			path = PreviewExtension;
+			sourceTree = "<group>";
+		};
 		52C37C9724B7775E00E8D4DA /* GearmakerTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -300,37 +338,7 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		52379CA617227FB7006FC1E3 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				52379CCA172281E7006FC1E3 /* GenerateGearImage.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		52379CA917227FB7006FC1E3 /* QLPlugin */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 52379CC017227FB8006FC1E3 /* Build configuration list for PBXNativeTarget "QLPlugin" */;
-			buildPhases = (
-				52379CA417227FB7006FC1E3 /* Sources */,
-				52379CA517227FB7006FC1E3 /* Frameworks */,
-				52379CA617227FB7006FC1E3 /* Headers */,
-				52379CA717227FB7006FC1E3 /* Resources */,
-				52379CA817227FB7006FC1E3 /* Rez */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = QLPlugin;
-			productName = QLPlugin;
-			productReference = 52379CAA17227FB7006FC1E3 /* QLPlugin.qlgenerator */;
-			productType = "com.apple.product-type.bundle";
-		};
 		5252F9C516B5B4F0005AFA8C /* Gearmaker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5252F9F816B5B4F0005AFA8C /* Build configuration list for PBXNativeTarget "Gearmaker" */;
@@ -339,15 +347,52 @@
 				5252F9C316B5B4F0005AFA8C /* Frameworks */,
 				5252F9C416B5B4F0005AFA8C /* Resources */,
 				52379CC617228066006FC1E3 /* CopyFiles */,
+				5264DA082920355A00F12694 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5264DA192920377400F12694 /* PBXTargetDependency */,
+				5264DA342920396F00F12694 /* PBXTargetDependency */,
 			);
 			name = Gearmaker;
 			productName = Gearmaker;
 			productReference = 5252F9C616B5B4F0005AFA8C /* Gearmaker.app */;
 			productType = "com.apple.product-type.application";
+		};
+		5264DA0E2920377400F12694 /* ThumbnailExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5264DA1B2920377400F12694 /* Build configuration list for PBXNativeTarget "ThumbnailExtension" */;
+			buildPhases = (
+				5264DA0B2920377400F12694 /* Sources */,
+				5264DA0C2920377400F12694 /* Frameworks */,
+				5264DA0D2920377400F12694 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThumbnailExtension;
+			productName = ThumbnailExtension;
+			productReference = 5264DA0F2920377400F12694 /* ThumbnailExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		5264DA242920396F00F12694 /* PreviewExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5264DA362920396F00F12694 /* Build configuration list for PBXNativeTarget "PreviewExtension" */;
+			buildPhases = (
+				5264DA212920396F00F12694 /* Sources */,
+				5264DA222920396F00F12694 /* Frameworks */,
+				5264DA232920396F00F12694 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PreviewExtension;
+			productName = PreviewExtension;
+			productReference = 5264DA252920396F00F12694 /* PreviewExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 		52C37C9524B7775E00E8D4DA /* GearmakerTests */ = {
 			isa = PBXNativeTarget;
@@ -373,15 +418,22 @@
 		5252F9BD16B5B4F0005AFA8C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1150;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
 				ORGANIZATIONNAME = "Torsten Kammer";
 				TargetAttributes = {
-					52379CA917227FB7006FC1E3 = {
+					5252F9C516B5B4F0005AFA8C = {
+						DevelopmentTeam = MXAKMKWG34;
+					};
+					5264DA0E2920377400F12694 = {
+						CreatedOnToolsVersion = 14.1;
 						DevelopmentTeam = MXAKMKWG34;
 						ProvisioningStyle = Automatic;
 					};
-					5252F9C516B5B4F0005AFA8C = {
+					5264DA242920396F00F12694 = {
+						CreatedOnToolsVersion = 14.1;
 						DevelopmentTeam = MXAKMKWG34;
+						ProvisioningStyle = Automatic;
 					};
 					52C37C9524B7775E00E8D4DA = {
 						CreatedOnToolsVersion = 11.5;
@@ -406,21 +458,14 @@
 			projectRoot = "";
 			targets = (
 				5252F9C516B5B4F0005AFA8C /* Gearmaker */,
-				52379CA917227FB7006FC1E3 /* QLPlugin */,
 				52C37C9524B7775E00E8D4DA /* GearmakerTests */,
+				5264DA0E2920377400F12694 /* ThumbnailExtension */,
+				5264DA242920396F00F12694 /* PreviewExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		52379CA717227FB7006FC1E3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				52379CB817227FB8006FC1E3 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5252F9C416B5B4F0005AFA8C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -435,6 +480,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5264DA0D2920377400F12694 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5264DA232920396F00F12694 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		52C37C9424B7775E00E8D4DA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -444,31 +503,7 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXRezBuildPhase section */
-		52379CA817227FB7006FC1E3 /* Rez */ = {
-			isa = PBXRezBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXRezBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		52379CA417227FB7006FC1E3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				52379CBA17227FB8006FC1E3 /* GenerateThumbnailForURL.c in Sources */,
-				52379CBC17227FB8006FC1E3 /* GeneratePreviewForURL.c in Sources */,
-				52379CBE17227FB8006FC1E3 /* main.c in Sources */,
-				52379CCB172281E7006FC1E3 /* GenerateGearImage.m in Sources */,
-				52379CCE172282C6006FC1E3 /* Involute.m in Sources */,
-				52379CCF172282C6006FC1E3 /* Gear.m in Sources */,
-				52379CD0172287D1006FC1E3 /* NSArray+Map.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5252F9C216B5B4F0005AFA8C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -479,13 +514,33 @@
 				52C86CFD16B70B7800693748 /* NSArray+Map.m in Sources */,
 				52C86D0016B70F8A00693748 /* GearView.m in Sources */,
 				52C37C8824B6560100E8D4DA /* Gear+ExportAsSVG.m in Sources */,
-				52C86D0316B71A1F00693748 /* Gear3D.m in Sources */,
 				52E488B5171DA2A000ED6DC9 /* Gear3D+ColladaExport.m in Sources */,
 				52E488BB171DEA3400ED6DC9 /* NSXMLElement+SimplifiedCreation.m in Sources */,
 				52E488BF171DF38400ED6DC9 /* ExportViewController.m in Sources */,
 				52E488D2171DFC3D00ED6DC9 /* GearDocument.m in Sources */,
-				52E99F351758B0BC0087BC06 /* GenerateGearImage.m in Sources */,
 				52E99F361758B12D0087BC06 /* Gear+ExportAsPDF.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5264DA0B2920377400F12694 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5264DA152920377400F12694 /* ThumbnailProvider.m in Sources */,
+				5264DA3D29203FFC00F12694 /* Gear.m in Sources */,
+				5264DA3B29203FE000F12694 /* GenerateGearImage.m in Sources */,
+				5264DA3F2920400600F12694 /* Involute.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5264DA212920396F00F12694 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5264DA2D2920396F00F12694 /* PreviewProvider.m in Sources */,
+				5264DA3E29203FFC00F12694 /* Gear.m in Sources */,
+				5264DA3C29203FE500F12694 /* GenerateGearImage.m in Sources */,
+				5264DA402920400600F12694 /* Involute.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +556,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5264DA192920377400F12694 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5264DA0E2920377400F12694 /* ThumbnailExtension */;
+			targetProxy = 5264DA182920377400F12694 /* PBXContainerItemProxy */;
+		};
+		5264DA342920396F00F12694 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5264DA242920396F00F12694 /* PreviewExtension */;
+			targetProxy = 5264DA332920396F00F12694 /* PBXContainerItemProxy */;
+		};
 		52C37C9C24B7775E00E8D4DA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5252F9C516B5B4F0005AFA8C /* Gearmaker */;
@@ -509,14 +574,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		52379CB617227FB8006FC1E3 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				52379CB717227FB8006FC1E3 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		5284659C1721589D0018C3E7 /* GearDocument.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -570,50 +627,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		52379CC117227FB8006FC1E3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = MXAKMKWG34;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "QLPlugin/QLPlugin-Prefix.pch";
-				INFOPLIST_FILE = "QLPlugin/QLPlugin-Info.plist";
-				INSTALL_PATH = /Library/QuickLook;
-				PRODUCT_BUNDLE_IDENTIFIER = "de.ferroequinologist.gearmaker.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = qlgenerator;
-			};
-			name = Debug;
-		};
-		52379CC217227FB8006FC1E3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = MXAKMKWG34;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "QLPlugin/QLPlugin-Prefix.pch";
-				INFOPLIST_FILE = "QLPlugin/QLPlugin-Info.plist";
-				INSTALL_PATH = /Library/QuickLook;
-				PRODUCT_BUNDLE_IDENTIFIER = "de.ferroequinologist.gearmaker.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = qlgenerator;
-			};
-			name = Release;
-		};
 		5252F9F616B5B4F0005AFA8C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -634,6 +647,7 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -641,6 +655,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -661,11 +676,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "Gearmaker/Gearmaker-BridgingHeader.h";
 				WARNING_CFLAGS = (
 					"-Wall",
 					"-Wno-gnu",
@@ -693,6 +709,7 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -700,6 +717,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -713,10 +731,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "Gearmaker/Gearmaker-BridgingHeader.h";
 				WARNING_CFLAGS = (
 					"-Wall",
 					"-Wno-gnu",
@@ -730,11 +749,13 @@
 				CODE_SIGN_ENTITLEMENTS = Gearmaker/Gearmaker.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = MXAKMKWG34;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gearmaker/Gearmaker-Prefix.pch";
 				INFOPLIST_FILE = "Gearmaker/Gearmaker-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.ferroequinologist.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -748,15 +769,167 @@
 				CODE_SIGN_ENTITLEMENTS = Gearmaker/Gearmaker.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = MXAKMKWG34;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gearmaker/Gearmaker-Prefix.pch";
 				INFOPLIST_FILE = "Gearmaker/Gearmaker-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.ferroequinologist.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5264DA1C2920377400F12694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = ThumbnailExtension/ThumbnailExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = MXAKMKWG34;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ThumbnailExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ThumbnailExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Torsten Kammer. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = de.ferroequinologist.Gearmaker.ThumbnailExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		5264DA1D2920377400F12694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = ThumbnailExtension/ThumbnailExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MXAKMKWG34;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ThumbnailExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ThumbnailExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Torsten Kammer. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = de.ferroequinologist.Gearmaker.ThumbnailExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		5264DA372920396F00F12694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = PreviewExtension/PreviewExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = MXAKMKWG34;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PreviewExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PreviewExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Torsten Kammer. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = de.ferroequinologist.Gearmaker.PreviewExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		5264DA382920396F00F12694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = PreviewExtension/PreviewExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MXAKMKWG34;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PreviewExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PreviewExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Torsten Kammer. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = de.ferroequinologist.Gearmaker.PreviewExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Release;
 		};
@@ -775,6 +948,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = MXAKMKWG34;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -782,7 +956,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = GearmakerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = de.ferroequinologist.GearmakerTests;
@@ -807,6 +981,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = MXAKMKWG34;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -814,7 +989,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = GearmakerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = de.ferroequinologist.GearmakerTests;
@@ -826,15 +1001,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		52379CC017227FB8006FC1E3 /* Build configuration list for PBXNativeTarget "QLPlugin" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				52379CC117227FB8006FC1E3 /* Debug */,
-				52379CC217227FB8006FC1E3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		5252F9C016B5B4F0005AFA8C /* Build configuration list for PBXProject "Gearmaker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -849,6 +1015,24 @@
 			buildConfigurations = (
 				5252F9F916B5B4F0005AFA8C /* Debug */,
 				5252F9FA16B5B4F0005AFA8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5264DA1B2920377400F12694 /* Build configuration list for PBXNativeTarget "ThumbnailExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5264DA1C2920377400F12694 /* Debug */,
+				5264DA1D2920377400F12694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5264DA362920396F00F12694 /* Build configuration list for PBXNativeTarget "PreviewExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5264DA372920396F00F12694 /* Debug */,
+				5264DA382920396F00F12694 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

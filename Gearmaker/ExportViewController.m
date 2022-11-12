@@ -28,20 +28,24 @@
 	 @"export-triangulate": @(YES),
 	 @"export-format" : @"org.khronos.collada.digital-asset-exchange"
 	 }];
+    
+    _allowedTypes = @[
+        [UTType typeWithIdentifier:@"org.khronos.collada.digital-asset-exchange"],
+        [UTType typeWithIdentifier:@"org.khronos.collada.digital-asset-exchange"],
+        UTTypePDF,
+        UTTypeSVG
+    ];
 	
 	_useTriangulation = [[NSUserDefaults standardUserDefaults] boolForKey:@"export-triangulate"];
-	_exportType = [[NSUserDefaults standardUserDefaults] stringForKey:@"export-format"];
+    NSString *exportTypeIdentifier = [[NSUserDefaults standardUserDefaults] stringForKey:@"export-format"];
 	
-	if ([_exportType isEqual:@"org.khronos.collada.digital-asset-exchange"])
-		_selectedTypeIndex = 0;
-	else if ([_exportType isEqual:@"com.autodesk.obj"])
-		_selectedTypeIndex = 1;
-	else if ([_exportType isEqual:(__bridge NSString *)kUTTypePDF])
-		_selectedTypeIndex = 2;
-    else if ([_exportType isEqual:(__bridge NSString *)kUTTypeScalableVectorGraphics])
-        _selectedTypeIndex = 3;
-	else
-		_selectedTypeIndex = NSNotFound;
+    _selectedTypeIndex = NSNotFound;
+    for (NSUInteger i = 0; i < _allowedTypes.count; i++) {
+        if ([exportTypeIdentifier isEqual:_allowedTypes[i].identifier]) {
+            _selectedTypeIndex = i;
+            break;
+        }
+    }
 	
 	return self;
 }
@@ -49,26 +53,16 @@
 - (void)setPanel:(NSSavePanel *)panel
 {
 	_panel = panel;
-	
-	_panel.allowedFileTypes = @[ self.exportType ];
+    
+    self.panel.allowedContentTypes = @[ self.exportType ];
 }
 
 - (void)setSelectedTypeIndex:(NSUInteger)selectedTypeIndex
 {
 	_selectedTypeIndex = selectedTypeIndex;
-	
-	if (_selectedTypeIndex == 0)
-		_exportType = @"org.khronos.collada.digital-asset-exchange";
-	else if (_selectedTypeIndex == 1)
-		_exportType = @"com.autodesk.obj";
-        else if (_selectedTypeIndex == 2)
-            _exportType = (__bridge NSString *)kUTTypePDF;
-    else if (_selectedTypeIndex == 3)
-        _exportType = (__bridge NSString *)kUTTypeScalableVectorGraphics;
-	else
-		_exportType = nil;
-	
-	self.panel.allowedFileTypes = @[ _exportType ];
+    _exportType = selectedTypeIndex < _allowedTypes.count ? _allowedTypes[selectedTypeIndex] : nil;
+    
+    self.panel.allowedContentTypes = @[ self.exportType ];
 	
 	[[NSUserDefaults standardUserDefaults] setObject:_exportType forKey:@"export-format"];
 }
@@ -82,7 +76,7 @@
 
 - (BOOL)canUseTriangulation
 {
-	return ![self.exportType isEqual:(__bridge NSString *) kUTTypePDF];
+    return ![self.exportType isEqual:UTTypePDF];
 }
 
 @end
