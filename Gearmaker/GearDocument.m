@@ -81,7 +81,7 @@
 	[savePanel beginSheetModalForWindow:self.windowForSheet completionHandler:^(NSInteger result){
 		if (result != NSModalResponseOK) return;
 		
-		if ([controller.exportType isEqual:@"org.khronos.collada.digital-asset-exchange"])
+		if ([controller.exportType.identifier isEqual:@"org.khronos.collada.digital-asset-exchange"])
 		{
 			NSXMLDocument *doc = [self.gear colladaDocumentUsingTriangulation:controller.useTriangulation];
 			NSData *data = doc.XMLData;
@@ -91,7 +91,7 @@
 			if (!success)
 				[self.windowForSheet presentError:error];
 		}
-		else if ([controller.exportType isEqual:@"com.autodesk.obj"])
+		else if ([controller.exportType.identifier isEqual:@"com.autodesk.obj"])
 		{
 			NSString *string = controller.useTriangulation ? [self.gear triangulatedObjString] : [self.gear objString];
 			
@@ -100,14 +100,14 @@
 			if (!success)
 				[self.windowForSheet presentError:error];
 		}
-		else if ([controller.exportType isEqual:[UTTypePDF identifier]])
+		else if ([controller.exportType isEqual:UTTypePDF])
         {
             NSError *error;
             BOOL success = [self.gear writePDFToURL:savePanel.URL error:&error];
 			if (!success)
 				[self.windowForSheet presentError:error];
 		}
-        else if ([controller.exportType isEqual:[UTTypeSVG identifier]])
+        else if ([controller.exportType isEqual:UTTypeSVG])
         {
             NSError *error;
             BOOL success = [self.gear writeSVGToURL:savePanel.URL error:&error];
