@@ -9,19 +9,12 @@
 /* Begin PBXBuildFile section */
 		5252F9CB16B5B4F0005AFA8C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5252F9CA16B5B4F0005AFA8C /* Cocoa.framework */; };
 		5252F9D716B5B4F0005AFA8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252F9D616B5B4F0005AFA8C /* main.m */; };
-		5252FA0016B5B500005AFA8C /* Involute.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252F9FF16B5B500005AFA8C /* Involute.m */; };
 		5264DA102920377400F12694 /* QuickLookThumbnailing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5264D9F92920355A00F12694 /* QuickLookThumbnailing.framework */; };
 		5264DA112920377400F12694 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5264D9FB2920355A00F12694 /* Quartz.framework */; };
 		5264DA1A2920377400F12694 /* ThumbnailExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5264DA0F2920377400F12694 /* ThumbnailExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5264DA262920396F00F12694 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5264D9FB2920355A00F12694 /* Quartz.framework */; };
 		5264DA352920396F00F12694 /* PreviewExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5264DA252920396F00F12694 /* PreviewExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		5264DA3D29203FFC00F12694 /* Gear.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C86CEF16B69E3E00693748 /* Gear.m */; };
-		5264DA3E29203FFC00F12694 /* Gear.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C86CEF16B69E3E00693748 /* Gear.m */; };
-		5264DA3F2920400600F12694 /* Involute.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252F9FF16B5B500005AFA8C /* Involute.m */; };
-		5264DA402920400600F12694 /* Involute.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252F9FF16B5B500005AFA8C /* Involute.m */; };
 		5264DA422920402800F12694 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5264DA412920402800F12694 /* UniformTypeIdentifiers.framework */; };
-		5264DA432920416100F12694 /* Gear+ExportAsPDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 520ED80B171F439100BB4B23 /* Gear+ExportAsPDF.m */; };
-		5264DA442920416100F12694 /* Gear+ExportAsPDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 520ED80B171F439100BB4B23 /* Gear+ExportAsPDF.m */; };
 		5264DA472920425F00F12694 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264DA462920425F00F12694 /* PreviewProvider.swift */; };
 		5264DA4A292043D900F12694 /* ThumbnailProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264DA49292043D900F12694 /* ThumbnailProvider.swift */; };
 		526EFB70172206E30066D22A /* geardoc.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 526EFB6F172206E30066D22A /* geardoc.iconset */; };
@@ -29,19 +22,34 @@
 		528465A9172161430018C3E7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52AD558016B9C677007F0F0D /* InfoPlist.strings */; };
 		528465AA172161480018C3E7 /* GearDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5284659C1721589D0018C3E7 /* GearDocument.xib */; };
 		528465AB1721614E0018C3E7 /* ExportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52E488C6171DF3DE00ED6DC9 /* ExportViewController.xib */; };
-		52C37C8824B6560100E8D4DA /* Gear+ExportAsSVG.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C37C8324B64F3200E8D4DA /* Gear+ExportAsSVG.m */; };
 		52C37CA024B7776B00E8D4DA /* TestInvolute.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252FA0216B5B539005AFA8C /* TestInvolute.m */; };
 		52C37CA124B7776B00E8D4DA /* TestGear.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C86CF316B69F9E00693748 /* TestGear.m */; };
-		52C86CF016B69E3E00693748 /* Gear.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C86CEF16B69E3E00693748 /* Gear.m */; };
 		52C86CFD16B70B7800693748 /* NSArray+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C86CFC16B70B7800693748 /* NSArray+Map.m */; };
-		52C86D0016B70F8A00693748 /* GearView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C86CFF16B70F8A00693748 /* GearView.m */; };
-		52E488B5171DA2A000ED6DC9 /* Gear3D+ColladaExport.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E488B4171DA2A000ED6DC9 /* Gear3D+ColladaExport.m */; };
-		52E488BB171DEA3400ED6DC9 /* NSXMLElement+SimplifiedCreation.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E488BA171DEA3400ED6DC9 /* NSXMLElement+SimplifiedCreation.m */; };
 		52E488BF171DF38400ED6DC9 /* ExportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E488BD171DF38400ED6DC9 /* ExportViewController.m */; };
 		52E488CA171DF89900ED6DC9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52AD558616B9C681007F0F0D /* MainMenu.xib */; };
 		52E488CC171DF8A100ED6DC9 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 52AD557E16B9C677007F0F0D /* Credits.rtf */; };
 		52E488D2171DFC3D00ED6DC9 /* GearDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E488D0171DFC3D00ED6DC9 /* GearDocument.m */; };
-		52E99F361758B12D0087BC06 /* Gear+ExportAsPDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 520ED80B171F439100BB4B23 /* Gear+ExportAsPDF.m */; };
+		52E5385129204A36007ED420 /* Involute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264DA4C2920479600F12694 /* Involute.swift */; };
+		52E5385229204A37007ED420 /* Involute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264DA4C2920479600F12694 /* Involute.swift */; };
+		52E5385329204A38007ED420 /* Involute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264DA4C2920479600F12694 /* Involute.swift */; };
+		52E5385429204A38007ED420 /* Involute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264DA4C2920479600F12694 /* Involute.swift */; };
+		52E5385629204A66007ED420 /* Gear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E5385529204A66007ED420 /* Gear.swift */; };
+		52E5385729204A66007ED420 /* Gear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E5385529204A66007ED420 /* Gear.swift */; };
+		52E5385829204A66007ED420 /* Gear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E5385529204A66007ED420 /* Gear.swift */; };
+		52E5385929204A66007ED420 /* Gear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E5385529204A66007ED420 /* Gear.swift */; };
+		52E5385B29206B1A007ED420 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E5385A29206B1A007ED420 /* Accelerate.framework */; };
+		52E5385D292099B0007ED420 /* Gear+Export2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E5385C292099B0007ED420 /* Gear+Export2D.swift */; };
+		52E5385E292099B0007ED420 /* Gear+Export2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E5385C292099B0007ED420 /* Gear+Export2D.swift */; };
+		52E5385F292099B0007ED420 /* Gear+Export2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E5385C292099B0007ED420 /* Gear+Export2D.swift */; };
+		52E53860292099B0007ED420 /* Gear+Export2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E5385C292099B0007ED420 /* Gear+Export2D.swift */; };
+		52E538622920A04E007ED420 /* Gear+Export3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E538612920A04E007ED420 /* Gear+Export3D.swift */; };
+		52E538632920A04E007ED420 /* Gear+Export3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E538612920A04E007ED420 /* Gear+Export3D.swift */; };
+		52E538642920A04E007ED420 /* Gear+Export3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E538612920A04E007ED420 /* Gear+Export3D.swift */; };
+		52E538652920A04E007ED420 /* Gear+Export3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E538612920A04E007ED420 /* Gear+Export3D.swift */; };
+		52E538672921973D007ED420 /* GearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E538662921973D007ED420 /* GearView.swift */; };
+		52E538682921973D007ED420 /* GearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E538662921973D007ED420 /* GearView.swift */; };
+		52E538692921973D007ED420 /* GearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E538662921973D007ED420 /* GearView.swift */; };
+		52E5386A2921973D007ED420 /* GearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E538662921973D007ED420 /* GearView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,8 +101,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		520ED80A171F439100BB4B23 /* Gear+ExportAsPDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Gear+ExportAsPDF.h"; sourceTree = "<group>"; };
-		520ED80B171F439100BB4B23 /* Gear+ExportAsPDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Gear+ExportAsPDF.m"; sourceTree = "<group>"; };
 		52379CAB17227FB8006FC1E3 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		52379CAD17227FB8006FC1E3 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
 		52379CAF17227FB8006FC1E3 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
@@ -108,8 +114,6 @@
 		5252F9D616B5B4F0005AFA8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5252F9D816B5B4F0005AFA8C /* Gearmaker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gearmaker-Prefix.pch"; sourceTree = "<group>"; };
 		5252F9E816B5B4F0005AFA8C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		5252F9FE16B5B500005AFA8C /* Involute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Involute.h; sourceTree = "<group>"; };
-		5252F9FF16B5B500005AFA8C /* Involute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Involute.m; sourceTree = "<group>"; };
 		5252FA0116B5B539005AFA8C /* TestInvolute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestInvolute.h; sourceTree = "<group>"; };
 		5252FA0216B5B539005AFA8C /* TestInvolute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestInvolute.m; sourceTree = "<group>"; };
 		5264D9F92920355A00F12694 /* QuickLookThumbnailing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLookThumbnailing.framework; path = System/Library/Frameworks/QuickLookThumbnailing.framework; sourceTree = SDKROOT; };
@@ -125,6 +129,8 @@
 		5264DA462920425F00F12694 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		5264DA48292043D800F12694 /* ThumbnailExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ThumbnailExtension-Bridging-Header.h"; sourceTree = "<group>"; };
 		5264DA49292043D900F12694 /* ThumbnailProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailProvider.swift; sourceTree = "<group>"; };
+		5264DA4B2920479600F12694 /* Gearmaker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gearmaker-Bridging-Header.h"; sourceTree = "<group>"; };
+		5264DA4C2920479600F12694 /* Involute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Involute.swift; sourceTree = "<group>"; };
 		52653D7816BAAE53001D802F /* Gearmaker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Gearmaker.entitlements; sourceTree = "<group>"; };
 		526EFB6F172206E30066D22A /* geardoc.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = geardoc.iconset; sourceTree = SOURCE_ROOT; };
 		52846598172155060018C3E7 /* icon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = icon.iconset; sourceTree = SOURCE_ROOT; };
@@ -134,8 +140,6 @@
 		528465AD1721630C0018C3E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		52AD557F16B9C677007F0F0D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = de; path = Gearmaker/de.lproj/Credits.rtf; sourceTree = "<group>"; };
 		52AD558116B9C677007F0F0D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = Gearmaker/de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		52C37C8224B64F2D00E8D4DA /* Gear+ExportAsSVG.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gear+ExportAsSVG.h"; sourceTree = "<group>"; };
-		52C37C8324B64F3200E8D4DA /* Gear+ExportAsSVG.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Gear+ExportAsSVG.m"; sourceTree = "<group>"; };
 		52C37C8524B655C300E8D4DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ExportViewController.strings; sourceTree = "<group>"; };
 		52C37C8724B655C600E8D4DA /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/ExportViewController.strings; sourceTree = "<group>"; };
 		52C37C8924B7721000E8D4DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/GearDocument.strings; sourceTree = "<group>"; };
@@ -143,18 +147,10 @@
 		52C37C8B24B7735600E8D4DA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/MacOSX.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		52C37C9624B7775E00E8D4DA /* GearmakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GearmakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C37C9A24B7775E00E8D4DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52C86CEE16B69E3E00693748 /* Gear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gear.h; sourceTree = "<group>"; };
-		52C86CEF16B69E3E00693748 /* Gear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gear.m; sourceTree = "<group>"; };
 		52C86CF216B69F9E00693748 /* TestGear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestGear.h; sourceTree = "<group>"; };
 		52C86CF316B69F9E00693748 /* TestGear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestGear.m; sourceTree = "<group>"; };
 		52C86CFB16B70B7800693748 /* NSArray+Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Map.h"; sourceTree = "<group>"; };
 		52C86CFC16B70B7800693748 /* NSArray+Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Map.m"; sourceTree = "<group>"; };
-		52C86CFE16B70F8A00693748 /* GearView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GearView.h; sourceTree = "<group>"; };
-		52C86CFF16B70F8A00693748 /* GearView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GearView.m; sourceTree = "<group>"; };
-		52E488B3171DA2A000ED6DC9 /* Gear3D+ColladaExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Gear3D+ColladaExport.h"; sourceTree = "<group>"; };
-		52E488B4171DA2A000ED6DC9 /* Gear3D+ColladaExport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Gear3D+ColladaExport.m"; sourceTree = "<group>"; };
-		52E488B9171DEA3400ED6DC9 /* NSXMLElement+SimplifiedCreation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSXMLElement+SimplifiedCreation.h"; sourceTree = "<group>"; };
-		52E488BA171DEA3400ED6DC9 /* NSXMLElement+SimplifiedCreation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSXMLElement+SimplifiedCreation.m"; sourceTree = "<group>"; };
 		52E488BC171DF38400ED6DC9 /* ExportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExportViewController.h; sourceTree = "<group>"; };
 		52E488BD171DF38400ED6DC9 /* ExportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExportViewController.m; sourceTree = "<group>"; };
 		52E488C1171DF3B500ED6DC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -162,6 +158,11 @@
 		52E488C7171DF3E200ED6DC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ExportViewController.xib; sourceTree = "<group>"; };
 		52E488CF171DFC3C00ED6DC9 /* GearDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GearDocument.h; sourceTree = "<group>"; };
 		52E488D0171DFC3D00ED6DC9 /* GearDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GearDocument.m; sourceTree = "<group>"; };
+		52E5385529204A66007ED420 /* Gear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gear.swift; sourceTree = "<group>"; };
+		52E5385A29206B1A007ED420 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		52E5385C292099B0007ED420 /* Gear+Export2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gear+Export2D.swift"; sourceTree = "<group>"; };
+		52E538612920A04E007ED420 /* Gear+Export3D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gear+Export3D.swift"; sourceTree = "<group>"; };
+		52E538662921973D007ED420 /* GearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +170,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52E5385B29206B1A007ED420 /* Accelerate.framework in Frameworks */,
 				5264DA422920402800F12694 /* UniformTypeIdentifiers.framework in Frameworks */,
 				5252F9CB16B5B4F0005AFA8C /* Cocoa.framework in Frameworks */,
 			);
@@ -227,6 +229,7 @@
 		5252F9C916B5B4F0005AFA8C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				52E5385A29206B1A007ED420 /* Accelerate.framework */,
 				5264DA412920402800F12694 /* UniformTypeIdentifiers.framework */,
 				52C37C8B24B7735600E8D4DA /* XCTest.framework */,
 				5252F9CA16B5B4F0005AFA8C /* Cocoa.framework */,
@@ -260,26 +263,18 @@
 				52C86CFC16B70B7800693748 /* NSArray+Map.m */,
 				52AD558616B9C681007F0F0D /* MainMenu.xib */,
 				5252F9D116B5B4F0005AFA8C /* Supporting Files */,
-				5252F9FE16B5B500005AFA8C /* Involute.h */,
-				5252F9FF16B5B500005AFA8C /* Involute.m */,
-				52C86CEE16B69E3E00693748 /* Gear.h */,
-				52C86CEF16B69E3E00693748 /* Gear.m */,
-				52C86CFE16B70F8A00693748 /* GearView.h */,
-				52C86CFF16B70F8A00693748 /* GearView.m */,
-				52E488B3171DA2A000ED6DC9 /* Gear3D+ColladaExport.h */,
-				52E488B4171DA2A000ED6DC9 /* Gear3D+ColladaExport.m */,
-				52E488B9171DEA3400ED6DC9 /* NSXMLElement+SimplifiedCreation.h */,
-				52E488BA171DEA3400ED6DC9 /* NSXMLElement+SimplifiedCreation.m */,
 				52E488BC171DF38400ED6DC9 /* ExportViewController.h */,
 				52E488BD171DF38400ED6DC9 /* ExportViewController.m */,
 				52E488C6171DF3DE00ED6DC9 /* ExportViewController.xib */,
 				52E488CF171DFC3C00ED6DC9 /* GearDocument.h */,
 				52E488D0171DFC3D00ED6DC9 /* GearDocument.m */,
 				5284659C1721589D0018C3E7 /* GearDocument.xib */,
-				520ED80A171F439100BB4B23 /* Gear+ExportAsPDF.h */,
-				520ED80B171F439100BB4B23 /* Gear+ExportAsPDF.m */,
-				52C37C8224B64F2D00E8D4DA /* Gear+ExportAsSVG.h */,
-				52C37C8324B64F3200E8D4DA /* Gear+ExportAsSVG.m */,
+				5264DA4C2920479600F12694 /* Involute.swift */,
+				5264DA4B2920479600F12694 /* Gearmaker-Bridging-Header.h */,
+				52E5385529204A66007ED420 /* Gear.swift */,
+				52E5385C292099B0007ED420 /* Gear+Export2D.swift */,
+				52E538612920A04E007ED420 /* Gear+Export3D.swift */,
+				52E538662921973D007ED420 /* GearView.swift */,
 			);
 			path = Gearmaker;
 			sourceTree = "<group>";
@@ -420,6 +415,7 @@
 				TargetAttributes = {
 					5252F9C516B5B4F0005AFA8C = {
 						DevelopmentTeam = MXAKMKWG34;
+						LastSwiftMigration = 1410;
 					};
 					5264DA0E2920377400F12694 = {
 						CreatedOnToolsVersion = 14.1;
@@ -507,16 +503,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5252F9D716B5B4F0005AFA8C /* main.m in Sources */,
-				5252FA0016B5B500005AFA8C /* Involute.m in Sources */,
-				52C86CF016B69E3E00693748 /* Gear.m in Sources */,
+				52E538622920A04E007ED420 /* Gear+Export3D.swift in Sources */,
 				52C86CFD16B70B7800693748 /* NSArray+Map.m in Sources */,
-				52C86D0016B70F8A00693748 /* GearView.m in Sources */,
-				52C37C8824B6560100E8D4DA /* Gear+ExportAsSVG.m in Sources */,
-				52E488B5171DA2A000ED6DC9 /* Gear3D+ColladaExport.m in Sources */,
-				52E488BB171DEA3400ED6DC9 /* NSXMLElement+SimplifiedCreation.m in Sources */,
+				52E538672921973D007ED420 /* GearView.swift in Sources */,
+				52E5385429204A38007ED420 /* Involute.swift in Sources */,
+				52E5385629204A66007ED420 /* Gear.swift in Sources */,
 				52E488BF171DF38400ED6DC9 /* ExportViewController.m in Sources */,
 				52E488D2171DFC3D00ED6DC9 /* GearDocument.m in Sources */,
-				52E99F361758B12D0087BC06 /* Gear+ExportAsPDF.m in Sources */,
+				52E5385D292099B0007ED420 /* Gear+Export2D.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,10 +518,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5264DA432920416100F12694 /* Gear+ExportAsPDF.m in Sources */,
-				5264DA3D29203FFC00F12694 /* Gear.m in Sources */,
-				5264DA3F2920400600F12694 /* Involute.m in Sources */,
+				52E5385F292099B0007ED420 /* Gear+Export2D.swift in Sources */,
+				52E538692921973D007ED420 /* GearView.swift in Sources */,
+				52E5385829204A66007ED420 /* Gear.swift in Sources */,
 				5264DA4A292043D900F12694 /* ThumbnailProvider.swift in Sources */,
+				52E5385129204A36007ED420 /* Involute.swift in Sources */,
+				52E538642920A04E007ED420 /* Gear+Export3D.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,10 +531,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5264DA442920416100F12694 /* Gear+ExportAsPDF.m in Sources */,
-				5264DA3E29203FFC00F12694 /* Gear.m in Sources */,
-				5264DA402920400600F12694 /* Involute.m in Sources */,
+				52E53860292099B0007ED420 /* Gear+Export2D.swift in Sources */,
+				52E5386A2921973D007ED420 /* GearView.swift in Sources */,
+				52E5385929204A66007ED420 /* Gear.swift in Sources */,
 				5264DA472920425F00F12694 /* PreviewProvider.swift in Sources */,
+				52E5385229204A37007ED420 /* Involute.swift in Sources */,
+				52E538652920A04E007ED420 /* Gear+Export3D.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,7 +544,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52E5385729204A66007ED420 /* Gear.swift in Sources */,
+				52E5385E292099B0007ED420 /* Gear+Export2D.swift in Sources */,
+				52E538682921973D007ED420 /* GearView.swift in Sources */,
 				52C37CA124B7776B00E8D4DA /* TestGear.m in Sources */,
+				52E538632920A04E007ED420 /* Gear+Export3D.swift in Sources */,
+				52E5385329204A38007ED420 /* Involute.swift in Sources */,
 				52C37CA024B7776B00E8D4DA /* TestInvolute.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -745,6 +748,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Gearmaker/Gearmaker.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -754,10 +758,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gearmaker/Gearmaker-Prefix.pch";
 				INFOPLIST_FILE = "Gearmaker/Gearmaker-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.ferroequinologist.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Gearmaker/Gearmaker-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -766,6 +774,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Gearmaker/Gearmaker.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -775,10 +784,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gearmaker/Gearmaker-Prefix.pch";
 				INFOPLIST_FILE = "Gearmaker/Gearmaker-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.ferroequinologist.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Gearmaker/Gearmaker-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -946,6 +958,7 @@
 		52C37C9E24B7775E00E8D4DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -978,6 +991,7 @@
 		52C37C9F24B7775E00E8D4DA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;

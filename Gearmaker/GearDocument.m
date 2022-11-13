@@ -11,11 +11,8 @@
 #import <UniformTypeIdentifiers/UniformTypeIdentifiers.h>
 
 #import "ExportViewController.h"
-#import "Gear.h"
-#import "Gear3D+ColladaExport.h"
-#import "Gear+ExportAsPDF.h"
-#import "Gear+ExportAsSVG.h"
-#import "GearView.h"
+
+#import "Gearmaker-Swift.h"
 
 @implementation GearDocument
 
@@ -64,7 +61,16 @@
 
 - (BOOL)readFromData:(NSData *)data ofType:(NSString *)typeName error:(NSError **)outError
 {
-    return [self.gear loadFrom:data error:outError];
+    self.gear = [Gear loadFromData:data error:outError];
+    if (!self.gear) {
+        return NO;
+    }
+    
+    if (self.gearView) {
+        self.gearView.gear = self.gear;
+    }
+    
+    return YES;
 }
 
 - (IBAction)export:(id)sender;
@@ -80,40 +86,27 @@
 	
 	[savePanel beginSheetModalForWindow:self.windowForSheet completionHandler:^(NSInteger result){
 		if (result != NSModalResponseOK) return;
-		
+        
+        NSError *error = [NSError errorWithDomain:@"Gearmaker" code:-1 userInfo:@{ NSLocalizedDescriptionKey: NSLocalizedString(@"File type not supported", @"Default in case file cannot be written")}];
+        BOOL success = false;
 		if ([controller.exportType.identifier isEqual:@"org.khronos.collada.digital-asset-exchange"])
 		{
-			NSXMLDocument *doc = [self.gear colladaDocumentUsingTriangulation:controller.useTriangulation];
-			NSData *data = doc.XMLData;
-			
-			NSError *error;
-			BOOL success = [data writeToURL:savePanel.URL options:NSDataWritingAtomic error:&error];
-			if (!success)
-				[self.windowForSheet presentError:error];
+            success = [self.gear writeColladaTo:savePanel.URL triangulate:controller.useTriangulation error:&error];
 		}
 		else if ([controller.exportType.identifier isEqual:@"com.autodesk.obj"])
 		{
-			NSString *string = controller.useTriangulation ? [self.gear triangulatedObjString] : [self.gear objString];
-			
-			NSError *error;
-			BOOL success = [string writeToURL:savePanel.URL atomically:YES encoding:NSASCIIStringEncoding error:&error];
-			if (!success)
-				[self.windowForSheet presentError:error];
+            success = [self.gear writeOBJTo:savePanel.URL triangulate:controller.useTriangulation error:&error];
 		}
 		else if ([controller.exportType isEqual:UTTypePDF])
         {
-            NSError *error;
-            BOOL success = [self.gear writePDFToURL:savePanel.URL error:&error];
-			if (!success)
-				[self.windowForSheet presentError:error];
+            success = [self.gear writePDFTo:savePanel.URL error:&error];
 		}
         else if ([controller.exportType isEqual:UTTypeSVG])
         {
-            NSError *error;
-            BOOL success = [self.gear writeSVGToURL:savePanel.URL error:&error];
-            if (!success)
-                [self.windowForSheet presentError:error];
+            success = [self.gear writeSVGTo:savePanel.URL error:&error];
         }
+        if (!success)
+            [self.windowForSheet presentError:error];
 	}];
 }
 

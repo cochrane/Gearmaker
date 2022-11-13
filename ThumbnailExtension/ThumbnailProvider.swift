@@ -13,9 +13,7 @@ import QuickLookThumbnailing
     
     override func provideThumbnail(for request: QLFileThumbnailRequest, _ handler: @escaping (QLThumbnailReply?, Error?) -> Void) {
         do {
-            let data = try Data(contentsOf: request.fileURL)
-            let gear = Gear()
-            try gear.load(from: data)
+            let gear = try Gear.load(fromUrl: request.fileURL)
             
             let reply = QLThumbnailReply(contextSize: request.maximumSize) { context in
                 gear.draw(in: context, size: request.maximumSize)

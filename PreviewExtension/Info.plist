@@ -9,7 +9,9 @@
 			<key>QLIsDataBasedPreview</key>
 			<true/>
 			<key>QLSupportedContentTypes</key>
-			<array/>
+			<array>
+				<string>de.ferroequinologist.gearmaker.gear</string>
+			</array>
 			<key>QLSupportsSearchableItems</key>
 			<false/>
 		</dict>

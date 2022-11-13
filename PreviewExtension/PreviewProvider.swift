@@ -16,9 +16,7 @@ import QuickLookUI
         completionHandler handler: @escaping (QLPreviewReply?, Error?) -> Void
     ) {
         do {
-            let data = try Data(contentsOf: request.fileURL)
-            let gear = Gear()
-            try gear.load(from: data)
+            let gear = try Gear.load(fromUrl: request.fileURL)
             
             let size = CGSize(width: 800, height: 800)
             let reply = QLPreviewReply(contextSize: size, isBitmap: false) { context, reply in
