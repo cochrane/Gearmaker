@@ -47,16 +47,7 @@
 
 - (NSData *)dataOfType:(NSString *)typeName error:(NSError **)outError
 {
-	NSDictionary *data = @{
-	@"modul" : @(self.gear.module),
-	@"zaehne" : @(self.gear.teeth),
-	@"eingriffwinkel" : @(self.gear.eingriffwinkel),
-	@"kopfspielfaktor" : @(self.gear.kopfspielfaktor),
-	@"dicke" : @(self.gear.thickness),
-	@"pointInterval" : @(self.gear.pointInterval)
-	};
-	
-	return [NSPropertyListSerialization dataWithPropertyList:data format:NSPropertyListXMLFormat_v1_0 options:0 error:outError];
+    return [self.gear writeDataAndReturnError:outError];
 }
 
 - (BOOL)readFromData:(NSData *)data ofType:(NSString *)typeName error:(NSError **)outError

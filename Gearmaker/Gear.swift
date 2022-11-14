@@ -29,6 +29,11 @@ import simd
         return try load(fromData: data)
     }
     
+    @objc func writeData() throws -> Data {
+        let encoder = PropertyListEncoder()
+        return try encoder.encode(self)
+    }
+    
     // Basic data
     
     @objc var module: Double = 0.0
